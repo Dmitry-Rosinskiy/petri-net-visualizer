@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block input %}
+<form id="input-form" class="input-panel" action="#" method="post" enctype="multipart/form-data">
+    <label>Загрузить файл с основным процессом:</label>
+    <input id="process-file" type="file" name="process" accept=".pnml">
+    <br>
+    <br>
+    <label>Загрузить файлы с подпроцессами:</label>
+    <input id="subprocess-files" type="file" name="subprocesses" multiple accept=".pnml">
+    <br>
+    <br>
+    <br>
+    <input type="submit" value="Загрузить" class="load-button" onclick="showLoading()">
+</form>
+<div id="loading" hidden>
+    <h3>Идёт загрузка файлов, пожалуйста подождите...</h3>
+    <div class="loader"></div>
+</div>
+{% endblock %}

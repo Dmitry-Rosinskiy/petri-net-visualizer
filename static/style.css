@@ -1,0 +1,253 @@
+body {
+    background-color: #eeeeee;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 85%;
+}
+
+.caption {
+    border: 3px solid black;
+    border-radius: 5px;
+    background-color: #7fff00;
+    margin: 10px;
+    padding: 5px;
+}
+
+.input-panel {
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: #00ced1;
+    margin: 10px;
+    padding: 5px;
+    text-align: left;
+}
+
+input::file-selector-button {
+    border-radius: 5px;
+    font-weight: bold;
+    height: 30px;
+}
+
+.visualization {
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 5px;
+    overflow-x: scroll;
+    height: 400px;
+    overflow-y: scroll;
+}
+
+.control-panel {
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: #00ced1;
+    margin: 10px;
+    padding: 5px;
+}
+
+.process-caption {
+    margin-top: -25px;
+    font-size: 1.2em;
+}
+
+.scale-panel {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+.output-panel {
+    border: 2px solid black;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 5px;
+    text-align: center;
+}
+
+.download-panel {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.footer {
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: #dcdcdc;
+    margin: 10px;
+    text-align: right;
+    padding-right: 5px;
+}
+
+.load-button {
+    background: #e6e6fa;
+    border: 2px solid #483d8b;
+    border-radius: 5px;
+    font-weight: bold;
+    margin: 10px;
+    height: 50px;
+    width: 200px;
+}
+
+.load-button:active {
+    transform: scale(0.97);
+}
+
+.load-button:hover {
+    background-color: #d3d3d3;
+    cursor: pointer;
+}
+
+.back-button {
+    background: #e6e6fa;
+    border: 2px solid #483d8b;
+    border-radius: 5px;
+    font-weight: bold;
+    margin: 10px;
+    height: 50px;
+    width: 200px;
+}
+
+.back-button:active {
+    transform: scale(0.97);
+}
+
+.back-button:hover {
+    background-color: #d3d3d3;
+    cursor: pointer;
+}
+
+.scale-button {
+    background: #f5fffa;
+    border: 2px solid #4b0082;
+    border-radius: 25%;
+    font-weight: bold;
+    margin: 10px;
+    height: 50px;
+    width: 50px;
+    font-size: 2em;
+    text-align: center;
+}
+
+.scale-button:hover {
+    background-color: #ebeba4;
+}
+
+.zoom-in:hover {
+    cursor: zoom-in;
+}
+
+.zoom-out:hover {
+    cursor: zoom-out;
+}
+
+.process-button {
+    background: #ffa07a;
+    border: 2px solid #ff7518;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 1.3em;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.process-button:active {
+    transform: scale(0.97);
+}
+
+.process-button:hover {
+    background-color: #ffa500;
+    cursor: pointer;
+}
+
+.subprocess-button {
+    background: #e6e6fa;
+    border: 2px solid #483d8b;
+    border-radius: 5px;
+    font-weight: bold;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.subprocess-button:active {
+    transform: scale(0.97);
+}
+
+.subprocess-button:hover {
+    background-color: #87cefa;
+    cursor: pointer;
+}
+
+.download-button {
+    background: #dda0dd;
+    border: 2px solid #4b0082;
+    border-radius: 5px;
+    font-weight: bold;
+    margin: 10px;
+    height: 50px;
+    width: 200px;
+}
+
+.download-button:active {
+    transform: scale(0.97);
+}
+
+.download-button:hover {
+    background-color: #da70d6;
+    cursor: pointer;
+}
+
+.selected-button {
+    opacity: 0.65;
+}
+
+.selected-button:active {
+    transform: scale(1);
+}
+
+.warning-message {
+    border: 1px solid #ffd800;
+    border-radius: 5px;
+    background-color: #fde910;
+    color: #2f4f4f;
+    text-align: left;
+    margin: 10px;
+    padding: 3px;
+}
+
+.error-message {
+    border: 1px solid #8b0000;
+    border-radius: 5px;
+    background-color: #ff4500;
+    color: #2f4f4f;
+    text-align: left;
+    margin: 10px;
+    padding: 3px;
+}
+
+.loader {
+    border: 16px solid #f3f3f3;
+    border-top: 16px solid #3498db;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    margin-left: auto;
+    margin-right: auto;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg) };
+    100% { -webkit-transform: rotate(360deg) };
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}

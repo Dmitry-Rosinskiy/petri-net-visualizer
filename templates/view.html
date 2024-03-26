@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% block input %}
+<form class="input-panel" action="#" method="post">
+    <input type="submit" value="Вернуться назад" class="back-button">
+</form>
+{% endblock %}
+{% block visualization %}
+<div class="scale-panel">
+    <h3>Изменить масштаб</h3>
+    <button class="scale-button zoom-in" onclick="zoomInImage()">+</button>
+    <button class="scale-button zoom-out" onclick="zoomOutImage()">-</button>
+</div>
+<div id="process-caption" class="process-caption">{{ process }}</div>
+<div class="visualization">
+    <img id="visualization" src="{{image_dir + process}}.png">
+</div>
+{% endblock %}
+{% block output %}
+<div class="output-panel">
+    <div>
+        <h4>Основной процесс</h4>
+        <button class="process-button selected-button" onclick="clickProcessButton(this)" disabled>{{ process }}</button>
+    </div>
+    <hr>
+    <h5>Подпроцессы</h5>
+    {% for subprocess in subprocesses %}
+        <button class="subprocess-button" onclick="clickProcessButton(this)">{{ subprocess }}</button>
+    {% endfor %}
+    <div class="download-panel">
+        <button class="download-button" onclick="redirectToDownloadPage()">Скачать изображения (архив)</button>
+    </div>
+</div>
+{% endblock %}

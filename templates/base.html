@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Визуализатор</title>
+    <link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</head>
+<body>
+    <div class="caption">
+        <h1>Визуализатор иерархических сетей Петри</h1>
+    </div>
+    <div id="input">
+    {% with messages = get_flashed_messages(with_categories=true) %}
+            {% if messages %}
+                {% for category, message in messages %}
+                    <div class="{{ category }}-message">{{ message }}</div>
+                {% endfor %}
+            {% endif %}
+        {% endwith %}
+    {% block input %}{% endblock %}
+    {% block visualization %} {% endblock %}
+    {% block output %} {% endblock %}
+    </div>
+    <div class="footer">
+        <h4><i>Узнать больше о сетях Петри: <a href="https://ru.wikipedia.org/wiki/%D0%A1%D0%B5%D1%82%D1%8C_%D0%9F%D0%B5%D1%82%D1%80%D0%B8" target="_blank">ссылка</a></i></h4>
+    </div>
+</body>
+</html>
