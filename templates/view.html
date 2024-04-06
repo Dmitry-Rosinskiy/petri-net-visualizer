@@ -1,4 +1,9 @@
 {% extends "base.html" %}
+{% block script %}
+<script>
+     window.addEventListener("load", () => addClickEventToImage({{ data|tojson }}))
+</script>
+{% endblock %}
 {% block input %}
 <form class="input-panel" action="#" method="post">
     <input type="submit" value="Вернуться назад" class="back-button">
@@ -12,19 +17,19 @@
 </div>
 <div id="process-caption" class="process-caption">{{ process }}</div>
 <div class="visualization">
-    <img id="visualization" src="{{image_dir + process}}.png">
+    <img id="visualization" src="{{image_dir + process}}.png" alt="{{image_dir + process}}.png">
 </div>
 {% endblock %}
 {% block output %}
 <div class="output-panel">
     <div>
         <h4>Основной процесс</h4>
-        <button class="process-button selected-button" onclick="clickProcessButton(this)" disabled>{{ process }}</button>
+        <button id="{{ process }}" class="process-button selected-button" onclick="clickProcessButton(this)" disabled>{{ process }}</button>
     </div>
     <hr>
     <h5>Подпроцессы</h5>
     {% for subprocess in subprocesses %}
-        <button class="subprocess-button" onclick="clickProcessButton(this)">{{ subprocess }}</button>
+        <button id="{{ subprocess }}" class="subprocess-button" onclick="clickProcessButton(this)">{{ subprocess }}</button>
     {% endfor %}
     <div class="download-panel">
         <button class="download-button" onclick="redirectToDownloadPage()">Скачать изображения (архив)</button>

@@ -14,6 +14,13 @@ image_dir = "static/petri_net_images/"
 # Название скачиваемого пользователем архива с изображениями процессов
 archive_name = "petri_net_images.zip"
 
+# Тег названия основного (иерархического) процесса в сессии
+process_session_tag = "process"
+# Тег названий подпроцессов в сессии
+subprocesses_session_tag = "subprocesses"
+# Тег информации об основном (иерархическом) процессе в сессии
+process_data_session_tag = "process-data"
+
 # Корневая страница (перенаправляет на страницу загрузки файлов)
 @app.route("/")
 def home():
@@ -30,7 +37,7 @@ def upload():
         success_upload = True
 
         # Файл основного (иерархического) процесса
-        process_file = request.files["process"]
+        process_file = request.files[process_session_tag]
         # Если файл основного (иерархического) процесса не был загружен пользователем
         if process_file.filename == "":
             # Создание сообщения пользователю
@@ -39,7 +46,7 @@ def upload():
             success_upload = False
 
         # Файлы подпроцессов
-        subprocess_files = request.files.getlist("subprocesses")
+        subprocess_files = request.files.getlist(subprocesses_session_tag)
         # Если файлы подпроцессов не были загружены пользователем
         if len(subprocess_files) > 0 and subprocess_files[0].filename == "":
             # Создание сообщения пользователю
@@ -50,12 +57,14 @@ def upload():
         # Если загрузка неучдачная
         if not success_upload:
             # Показать страницу загрузки файлов
-            return render_template("upload.html")  #img_url="https://upload.wikimedia.org/wikipedia/commons/f/fe/Detailed_petri_net.png")
+            return render_template("upload.html")
 
 
         process_file.save(upload_file_dir + process_file.filename)
+        # Данные об основном (иерархическом)  процессе (название переходов и их координаты на изображении)
+        process_data = dict()
         # Если нельзя получить изображение основного (иерархического) процесса (формат файла неверный)
-        if not save_image(upload_file_dir + process_file.filename, remove_extension(process_file.filename), image_dir):
+        if not save_image(upload_file_dir + process_file.filename, remove_extension(process_file.filename), image_dir, process_data):
             # Создание сообщения пользователю
             flash(f"Файл с основным процессом ({process_file.filename}) имеет неверный формат. Попробуйте снова.", category="error")
             # Неудачная загрузка
@@ -66,7 +75,7 @@ def upload():
         for subprocess_file in subprocess_files:
             subprocess_file.save(upload_file_dir + subprocess_file.filename)
             # Если нельзя получить изображение подпроцесса (формат файла неверный)
-            if not save_image(upload_file_dir +  subprocess_file.filename, remove_extension(subprocess_file.filename), image_dir):
+            if not save_image(upload_file_dir +  subprocess_file.filename, remove_extension(subprocess_file.filename), image_dir, {}):
                 incorrect_files.append(subprocess_file.filename)
                 # Неудачная загрузка
                 success_upload = False
@@ -93,12 +102,14 @@ def upload():
                 remove_file(image_dir + correct_file + ".png")
 
             # Показать страницу загрузки файлов
-            return render_template("upload.html")  #img_url="https://upload.wikimedia.org/wikipedia/commons/f/fe/Detailed_petri_net.png")
+            return render_template("upload.html")
 
         # Сохранение в сессии названия основного (иерархического) процесса
-        session["process"] = remove_extension(process_file.filename)
+        session[process_session_tag] = remove_extension(process_file.filename)
         # Сохранение в сессии названий подпроцессов
-        session["subprocesses"] = correct_files
+        session[subprocesses_session_tag] = correct_files
+        # Сохранение в сессии данных об основном (иерархическом) процессе
+        session[process_data_session_tag] = process_data
 
         # Перенаправить на страницу визуализации
         return redirect("/view")
@@ -114,9 +125,13 @@ def view():
     # Если метод запроса - GET (переход на страницу)
     if request.method == "GET":
         # Если файлы процессов были ранее загружены
-        if "process" in session and "subprocesses" in session:
+        if process_session_tag in session and subprocesses_session_tag in session and process_data_session_tag in session:
             # Показать страницу визуализации
-            return render_template("view.html", process=session["process"], subprocesses=session["subprocesses"], image_dir=image_dir)
+            return render_template("view.html",
+                                   process=session[process_session_tag],
+                                   subprocesses=session[subprocesses_session_tag],
+                                   image_dir=image_dir,
+                                   data=session[process_data_session_tag])
         else:
             # Создание сообщения пользователю
             flash("Чтобы запустить визуализацию, сначала выберите файлы.", category="warning")
@@ -128,20 +143,21 @@ def view():
 
         process_files = []
         # Если был загружен файл основного (иерархического) процесса
-        if "process" in session:
-            process_files.append(image_dir + session["process"] + ".png")
-            process_files.append(upload_file_dir + session["process"] + ".pnml")
+        if process_session_tag in session:
+            process_files.append(image_dir + session[process_session_tag] + ".png")
+            process_files.append(upload_file_dir + session[process_session_tag] + ".pnml")
         # Если были загружены файлы подпроцессов
-        if "subprocesses" in session:
-            for subprocess in session["subprocesses"]:
+        if subprocesses_session_tag in session:
+            for subprocess in session[subprocesses_session_tag]:
                 process_files.append(image_dir + subprocess + ".png")
                 process_files.append(upload_file_dir + subprocess + ".pnml")
         # Удаление загруженных файлов процессов и их изображений
         remove_files(process_files)
 
         # Удаление информации о файлах из сессии
-        session.pop("process", None)
-        session.pop("subprocesses", None)
+        session.pop(process_session_tag, None)
+        session.pop(subprocesses_session_tag, None)
+        session.pop(process_data_session_tag, None)
 
         # Перенаправить на страницу загрузки файлов
         return redirect("/upload")
@@ -151,9 +167,9 @@ def view():
 def download():
     process_images = []
     # Если файлы процессов были ранее загружены
-    if "process" in session and "subprocesses" in session:
-        process_images.append(image_dir + session["process"] + ".png")
-        for subprocess in session["subprocesses"]:
+    if process_session_tag in session and subprocesses_session_tag in session:
+        process_images.append(image_dir + session[process_session_tag] + ".png")
+        for subprocess in session[subprocesses_session_tag]:
             process_images.append(image_dir + subprocess + ".png")
 
         # Создание архива с изображениями и его скачивание из браузера
