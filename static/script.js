@@ -7,7 +7,7 @@ const minScale = -30;
 // Коэффициент единичного изменения масштаба изображения
 const scaleCoef = 1.1;
 // Радиус области клика
-const clickRadius = 20;
+const clickRadius = 50;
 
 // Добавление события нажатия по изображению
 const addClickEventToImage = (data) => {
@@ -17,6 +17,7 @@ const addClickEventToImage = (data) => {
     if (elemImage === null) {
         return;
     }
+    console.log(data);
 
     elemImage.addEventListener("click", (event) => {
         onImageClick(event, data);
