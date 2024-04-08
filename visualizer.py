@@ -1,5 +1,6 @@
 from pm4py import read_pnml, save_vis_petri_net
 
+# from pm4py.objects.petri_net.importer import importer as petri_importer
 
 # Сохранение изображения сети Петри, заданной с помощью файла .pnml
 def save_image(pnml_file, file_name, directory, data):
@@ -7,6 +8,7 @@ def save_image(pnml_file, file_name, directory, data):
     try:
         # Создание модели сети Петри на основании файла
         net, initial_marking, final_marking = read_pnml(pnml_file)
+        # net, initial_marking, final_marking = pm4py.objects.petri_net.importer.variants.pnml.import_net(pnml_file)
         for transition in net.transitions:
             label = transition.properties.get("trans_name_tag")
             graphics = transition.properties.get("layout_information_petri")
