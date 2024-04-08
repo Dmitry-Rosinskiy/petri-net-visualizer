@@ -2,6 +2,7 @@ from pm4py import read_pnml, save_vis_petri_net
 
 # from pm4py.objects.petri_net.importer import importer as petri_importer
 
+
 # Сохранение изображения сети Петри, заданной с помощью файла .pnml
 def save_image(pnml_file, file_name, directory, data):
     data.clear()
