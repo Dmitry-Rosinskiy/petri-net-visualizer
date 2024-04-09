@@ -63,12 +63,12 @@ def upload():
         process_file.save(upload_file_dir + process_file.filename)
         # Данные об основном (иерархическом)  процессе (название переходов и их координаты на изображении)
         process_data = dict()
+        # Список ошибок
+        errors = []
+
         # Если нельзя получить изображение основного (иерархического) процесса (формат файла неверный)
         if not save_image(upload_file_dir + process_file.filename, remove_extension(process_file.filename), image_dir,
-                          process_data):
-            # Создание сообщения пользователю
-            flash(f"Файл с основным процессом ({process_file.filename}) имеет неверный формат. Попробуйте снова.",
-                  category="error")
+                          process_data, errors):
             # Неудачная загрузка
             success_upload = False
 
@@ -78,7 +78,7 @@ def upload():
             subprocess_file.save(upload_file_dir + subprocess_file.filename)
             # Если нельзя получить изображение подпроцесса (формат файла неверный)
             if not save_image(upload_file_dir + subprocess_file.filename, remove_extension(subprocess_file.filename),
-                              image_dir, {}):
+                              image_dir, {}, errors, is_main=False):
                 incorrect_files.append(subprocess_file.filename)
                 # Неудачная загрузка
                 success_upload = False
@@ -87,13 +87,16 @@ def upload():
 
         # Если загрузка неудачна
         if not success_upload:
-            if len(incorrect_files) > 0:
-                # Создание сообщения пользователю
-                flash(f"Файл с подпроцессом ({', '.join(incorrect_files)}) имеет неверный формат. Попробуйте снова.",
-                      category="error")
-                for incorrect_file in incorrect_files:
-                    # Удаление некорректного файла подпроцесса
-                    remove_file(upload_file_dir + incorrect_file)
+
+            error_message = ""
+            for error in errors:
+                error_message += "\n" + error
+            # Создание сообщения пользователю
+            flash(error_message + "\nПопробуйте снова.", category="error")
+
+            for incorrect_file in incorrect_files:
+                # Удаление некорректного файла подпроцесса
+                remove_file(upload_file_dir + incorrect_file)
 
             # Удаление файла основного (иерархического) процесса
             remove_file(upload_file_dir + process_file.filename)
@@ -128,7 +131,8 @@ def view():
     # Если метод запроса - GET (переход на страницу)
     if request.method == "GET":
         # Если файлы процессов были ранее загружены
-        if process_session_tag in session and subprocesses_session_tag in session and process_data_session_tag in session:
+        if process_session_tag in session and subprocesses_session_tag in session \
+                and process_data_session_tag in session:
             # Показать страницу визуализации
             return render_template("view.html",
                                    process=session[process_session_tag],
@@ -188,5 +192,4 @@ def download():
 
 # Запуск приложения
 if __name__ == "__main__":
-    # app.run(host="0.0.0.0", port=5000)
-    app.run(host="0.0.0.0")
+    app.run()

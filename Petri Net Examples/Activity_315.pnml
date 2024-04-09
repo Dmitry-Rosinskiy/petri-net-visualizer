@@ -1,0 +1,352 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<pnml>
+  <net id="" type="http://www.pnml.org/version-2009/grammar/pnmlcoremodel">
+    <name>
+      <text></text>
+    </name>
+    <page id="n0">
+      <place id="pre_GC/SampledObjectAllocation_{System.Byte[][]}">
+        <name>
+          <text>pre_GC/SampledObjectAllocation_{System.Byte[][]}</text>
+        </name>
+      </place>
+      <place id="intplace_GC/BGCRevisit">
+        <name>
+          <text>intplace_GC/BGCRevisit</text>
+        </name>
+      </place>
+      <place id="pre_GC/Triggered_{ALLOC_LARGE}">
+        <name>
+          <text>pre_GC/Triggered_{ALLOC_LARGE}</text>
+        </name>
+      </place>
+      <place id="pre_GC/PinObjectAtGCTime_{System.Object}">
+        <name>
+          <text>pre_GC/PinObjectAtGCTime_{System.Object}</text>
+        </name>
+      </place>
+      <place id="pre_GC/Stop">
+        <name>
+          <text>pre_GC/Stop</text>
+        </name>
+      </place>
+      <place id="pre_GC/RestartEEStop">
+        <name>
+          <text>pre_GC/RestartEEStop</text>
+        </name>
+      </place>
+      <place id="pre_AppDomainResourceManagement/ThreadCreated">
+        <name>
+          <text>pre_AppDomainResourceManagement/ThreadCreated</text>
+        </name>
+      </place>
+      <place id="pre_GC/BGCStart">
+        <name>
+          <text>pre_GC/BGCStart</text>
+        </name>
+      </place>
+      <place id="intplace_GC/SampledObjectAllocation_{System.Byte[]}">
+        <name>
+          <text>intplace_GC/SampledObjectAllocation_{System.Byte[]}</text>
+        </name>
+      </place>
+      <place id="intplace_GC/BGCDrainMark">
+        <name>
+          <text>intplace_GC/BGCDrainMark</text>
+        </name>
+      </place>
+      <place id="sink0">
+        <name>
+          <text>sink0</text>
+        </name>
+      </place>
+      <place id="pre_GC/BGCRevisit">
+        <name>
+          <text>pre_GC/BGCRevisit</text>
+        </name>
+      </place>
+      <place id="pre_GC/SuspendEEStop">
+        <name>
+          <text>pre_GC/SuspendEEStop</text>
+        </name>
+      </place>
+      <place id="source0">
+        <name>
+          <text>source0</text>
+        </name>
+        <initialMarking>
+          <text>1</text>
+        </initialMarking>
+      </place>
+      <place id="pre_GC/SampledObjectAllocation_{System.Byte[]}">
+        <name>
+          <text>pre_GC/SampledObjectAllocation_{System.Byte[]}</text>
+        </name>
+      </place>
+      <place id="pre_GC/SetGCHandle_{WEAK_SHORT}">
+        <name>
+          <text>pre_GC/SetGCHandle_{WEAK_SHORT}</text>
+        </name>
+      </place>
+      <place id="pre_GC/RestartEEStart">
+        <name>
+          <text>pre_GC/RestartEEStart</text>
+        </name>
+      </place>
+      <place id="pre_GC/SetGCHandle_{STRONG}">
+        <name>
+          <text>pre_GC/SetGCHandle_{STRONG}</text>
+        </name>
+      </place>
+      <place id="pre_GC/CreateConcurrentThread">
+        <name>
+          <text>pre_GC/CreateConcurrentThread</text>
+        </name>
+      </place>
+      <place id="pre_GC/BGC1stNonCondStop">
+        <name>
+          <text>pre_GC/BGC1stNonCondStop</text>
+        </name>
+      </place>
+      <place id="intplace_GC/Triggered_{ALLOC_LARGE}">
+        <name>
+          <text>intplace_GC/Triggered_{ALLOC_LARGE}</text>
+        </name>
+      </place>
+      <transition id="GC/FinalizersStart">
+        <name>
+          <text>GC/FinalizersStart</text>
+        </name>
+      </transition>
+      <transition id="GC/SuspendEEStop">
+        <name>
+          <text>GC/SuspendEEStop</text>
+        </name>
+      </transition>
+      <transition id="GC/Stop">
+        <name>
+          <text>GC/Stop</text>
+        </name>
+      </transition>
+      <transition id="AppDomainResourceManagement/ThreadCreated">
+        <name>
+          <text>AppDomainResourceManagement/ThreadCreated</text>
+        </name>
+      </transition>
+      <transition id="hid_21">
+        <name>
+          <text>hid_21</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="04dd30aa-ded7-48c4-b7cf-fe58e592c90a"/>
+      </transition>
+      <transition id="hid_26">
+        <name>
+          <text>hid_26</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="2c400196-4c51-4da6-b846-9a22d600720b"/>
+      </transition>
+      <transition id="hid_28">
+        <name>
+          <text>hid_28</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="733b2591-5555-40bc-b4b6-c7ca4c5d1eb6"/>
+      </transition>
+      <transition id="hid_29">
+        <name>
+          <text>hid_29</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="ae7e619d-8a7f-4bcf-8efa-45910446bb74"/>
+      </transition>
+      <transition id="hid_14">
+        <name>
+          <text>hid_14</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="473cf8c0-229d-4bb1-8a89-cf39ca1ab2e3"/>
+      </transition>
+      <transition id="hid_27">
+        <name>
+          <text>hid_27</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="2ebdb9d0-b693-42e7-926f-5d774c59904b"/>
+      </transition>
+      <transition id="GC/SuspendEEStart_{GC}">
+        <name>
+          <text>GC/SuspendEEStart_{GC}</text>
+        </name>
+      </transition>
+      <transition id="GC/FinalizersStop">
+        <name>
+          <text>GC/FinalizersStop</text>
+        </name>
+      </transition>
+      <transition id="GC/SetGCHandle_{WEAK_SHORT}">
+        <name>
+          <text>GC/SetGCHandle_{WEAK_SHORT}</text>
+        </name>
+      </transition>
+      <transition id="GC/SetGCHandle_{STRONG}">
+        <name>
+          <text>GC/SetGCHandle_{STRONG}</text>
+        </name>
+      </transition>
+      <transition id="GC/Start_{ALLOC_LARGEB_GC}">
+        <name>
+          <text>GC/Start_{ALLOC_LARGEB_GC}</text>
+        </name>
+      </transition>
+      <transition id="GC/BGC1stNonCondStop">
+        <name>
+          <text>GC/BGC1stNonCondStop</text>
+        </name>
+      </transition>
+      <transition id="hid_18">
+        <name>
+          <text>hid_18</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="01cc8150-5157-49bd-b41b-9e9861b2efb8"/>
+      </transition>
+      <transition id="GC/SampledObjectAllocation_{System.Collections.Generic.List`1[System.Byte[]]}">
+        <name>
+          <text>GC/SampledObjectAllocation_{System.Collections.Generic.List`1[System.Byte[]]}</text>
+        </name>
+      </transition>
+      <transition id="GC/SampledObjectAllocation_{System.Byte[]}">
+        <name>
+          <text>GC/SampledObjectAllocation_{System.Byte[]}</text>
+        </name>
+      </transition>
+      <transition id="GC/BGCRevisit">
+        <name>
+          <text>GC/BGCRevisit</text>
+        </name>
+      </transition>
+      <transition id="GC/PinObjectAtGCTime_{System.Object}">
+        <name>
+          <text>GC/PinObjectAtGCTime_{System.Object}</text>
+        </name>
+      </transition>
+      <transition id="GC/RestartEEStop">
+        <name>
+          <text>GC/RestartEEStop</text>
+        </name>
+      </transition>
+      <transition id="GC/Start_{ALLOC_LARGENC_GC}">
+        <name>
+          <text>GC/Start_{ALLOC_LARGENC_GC}</text>
+        </name>
+      </transition>
+      <transition id="GC/BGCStart">
+        <name>
+          <text>GC/BGCStart</text>
+        </name>
+      </transition>
+      <transition id="hid_22">
+        <name>
+          <text>hid_22</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="2aa561b3-f608-4e70-8900-fe9a515a3d39"/>
+      </transition>
+      <transition id="GC/SampledObjectAllocation_{System.Byte[][]}">
+        <name>
+          <text>GC/SampledObjectAllocation_{System.Byte[][]}</text>
+        </name>
+      </transition>
+      <transition id="GC/BGCDrainMark">
+        <name>
+          <text>GC/BGCDrainMark</text>
+        </name>
+      </transition>
+      <transition id="GC/Triggered_{ALLOC_LARGE}">
+        <name>
+          <text>GC/Triggered_{ALLOC_LARGE}</text>
+        </name>
+      </transition>
+      <transition id="GC/RestartEEStart">
+        <name>
+          <text>GC/RestartEEStart</text>
+        </name>
+      </transition>
+      <transition id="GC/CreateConcurrentThread">
+        <name>
+          <text>GC/CreateConcurrentThread</text>
+        </name>
+      </transition>
+      <transition id="hid_24">
+        <name>
+          <text>hid_24</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="d8da50a4-d86c-45a8-9f49-4b30b3b4755c"/>
+      </transition>
+      <transition id="hid_25">
+        <name>
+          <text>hid_25</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="d0511027-dacd-4b30-9209-7f196d6f66be"/>
+      </transition>
+      <arc id="1625722702336" source="hid_25" target="pre_GC/BGCRevisit"/>
+      <arc id="1625722543120" source="pre_GC/SampledObjectAllocation_{System.Byte[][]}" target="GC/SampledObjectAllocation_{System.Byte[][]}"/>
+      <arc id="1625722635792" source="pre_GC/RestartEEStart" target="GC/RestartEEStart"/>
+      <arc id="1625722637328" source="pre_GC/CreateConcurrentThread" target="GC/CreateConcurrentThread"/>
+      <arc id="1625722701328" source="GC/SetGCHandle_{STRONG}" target="pre_AppDomainResourceManagement/ThreadCreated"/>
+      <arc id="1625722681376" source="hid_24" target="sink0"/>
+      <arc id="1625722701856" source="hid_26" target="pre_GC/SampledObjectAllocation_{System.Byte[]}"/>
+      <arc id="1625722703392" source="intplace_GC/SampledObjectAllocation_{System.Byte[]}" target="GC/BGCDrainMark"/>
+      <arc id="1625722541104" source="source0" target="GC/SampledObjectAllocation_{System.Collections.Generic.List`1[System.Byte[]]}"/>
+      <arc id="1625722700848" source="GC/PinObjectAtGCTime_{System.Object}" target="pre_GC/Stop"/>
+      <arc id="1625722634304" source="source0" target="hid_14"/>
+      <arc id="1625722682432" source="intplace_GC/BGCRevisit" target="hid_27"/>
+      <arc id="1625722699840" source="GC/Start_{ALLOC_LARGENC_GC}" target="pre_GC/PinObjectAtGCTime_{System.Object}"/>
+      <arc id="1625722702912" source="GC/FinalizersStop" target="pre_GC/SampledObjectAllocation_{System.Byte[]}"/>
+      <arc id="1625722680416" source="intplace_GC/SampledObjectAllocation_{System.Byte[]}" target="hid_21"/>
+      <arc id="1625722681952" source="intplace_GC/BGCDrainMark" target="hid_26"/>
+      <arc id="1625722702432" source="hid_21" target="pre_GC/SampledObjectAllocation_{System.Byte[][]}"/>
+      <arc id="1625722701424" source="AppDomainResourceManagement/ThreadCreated" target="pre_GC/CreateConcurrentThread"/>
+      <arc id="1625722683008" source="intplace_GC/BGCRevisit" target="hid_29"/>
+      <arc id="1625722701952" source="GC/SuspendEEStart_{GC}" target="pre_GC/SuspendEEStop"/>
+      <arc id="1625722703488" source="intplace_GC/SampledObjectAllocation_{System.Byte[]}" target="GC/FinalizersStart"/>
+      <arc id="1625722635408" source="pre_GC/SetGCHandle_{WEAK_SHORT}" target="GC/SetGCHandle_{WEAK_SHORT}"/>
+      <arc id="1625722636944" source="pre_GC/SetGCHandle_{STRONG}" target="GC/SetGCHandle_{STRONG}"/>
+      <arc id="1625722700944" source="GC/SetGCHandle_{WEAK_SHORT}" target="pre_GC/SetGCHandle_{STRONG}"/>
+      <arc id="1625722634400" source="hid_14" target="pre_GC/SuspendEEStop"/>
+      <arc id="1625722703008" source="hid_27" target="pre_GC/BGCRevisit"/>
+      <arc id="1625722702528" source="GC/BGC1stNonCondStop" target="pre_GC/RestartEEStart"/>
+      <arc id="1625722637520" source="pre_GC/BGCStart" target="GC/BGCStart"/>
+      <arc id="1625722699984" source="GC/Triggered_{ALLOC_LARGE}" target="intplace_GC/Triggered_{ALLOC_LARGE}"/>
+      <arc id="1625722701520" source="GC/CreateConcurrentThread" target="pre_GC/BGCStart"/>
+      <arc id="1625722683104" source="hid_29" target="sink0"/>
+      <arc id="1625722702048" source="GC/RestartEEStop" target="pre_GC/SampledObjectAllocation_{System.Byte[]}"/>
+      <arc id="1625722703584" source="intplace_GC/SampledObjectAllocation_{System.Byte[]}" target="GC/FinalizersStop"/>
+      <arc id="1625722679552" source="intplace_GC/SampledObjectAllocation_{System.Byte[]}" target="hid_18"/>
+      <arc id="1625722703104" source="hid_18" target="pre_GC/BGCRevisit"/>
+      <arc id="1625722638096" source="GC/SampledObjectAllocation_{System.Byte[]}" target="intplace_GC/SampledObjectAllocation_{System.Byte[]}"/>
+      <arc id="1625722541344" source="GC/BGCDrainMark" target="intplace_GC/BGCDrainMark"/>
+      <arc id="1625722702624" source="GC/Stop" target="pre_GC/RestartEEStart"/>
+      <arc id="1625722701616" source="GC/BGCStart" target="pre_GC/BGC1stNonCondStop"/>
+      <arc id="1625722681664" source="intplace_GC/BGCDrainMark" target="hid_25"/>
+      <arc id="1625722702144" source="GC/SampledObjectAllocation_{System.Byte[][]}" target="pre_GC/SampledObjectAllocation_{System.Byte[]}"/>
+      <arc id="1625722703680" source="intplace_GC/SampledObjectAllocation_{System.Byte[]}" target="GC/SuspendEEStart_{GC}"/>
+      <arc id="1625722635600" source="pre_GC/Stop" target="GC/Stop"/>
+      <arc id="1625722637136" source="pre_AppDomainResourceManagement/ThreadCreated" target="AppDomainResourceManagement/ThreadCreated"/>
+      <arc id="1625722701136" source="GC/RestartEEStart" target="pre_GC/RestartEEStop"/>
+      <arc id="1625722682720" source="intplace_GC/BGCRevisit" target="hid_28"/>
+      <arc id="1625722703200" source="intplace_GC/Triggered_{ALLOC_LARGE}" target="GC/Start_{ALLOC_LARGEB_GC}"/>
+      <arc id="1625722680704" source="intplace_GC/SampledObjectAllocation_{System.Byte[]}" target="hid_22"/>
+      <arc id="1625722702720" source="GC/SampledObjectAllocation_{System.Collections.Generic.List`1[System.Byte[]]}" target="pre_GC/SampledObjectAllocation_{System.Byte[][]}"/>
+      <arc id="1625722634640" source="pre_GC/Triggered_{ALLOC_LARGE}" target="GC/Triggered_{ALLOC_LARGE}"/>
+      <arc id="1625722637712" source="pre_GC/BGC1stNonCondStop" target="GC/BGC1stNonCondStop"/>
+      <arc id="1625722702240" source="hid_22" target="pre_GC/SampledObjectAllocation_{System.Byte[]}"/>
+      <arc id="1625722682288" source="GC/BGCRevisit" target="intplace_GC/BGCRevisit"/>
+      <arc id="1625722542016" source="pre_GC/SampledObjectAllocation_{System.Byte[]}" target="GC/SampledObjectAllocation_{System.Byte[]}"/>
+      <arc id="1625722681280" source="intplace_GC/SampledObjectAllocation_{System.Byte[]}" target="hid_24"/>
+      <arc id="1625722701760" source="hid_28" target="pre_GC/SampledObjectAllocation_{System.Byte[]}"/>
+      <arc id="1625722703296" source="intplace_GC/Triggered_{ALLOC_LARGE}" target="GC/Start_{ALLOC_LARGENC_GC}"/>
+      <arc id="1625722635216" source="pre_GC/PinObjectAtGCTime_{System.Object}" target="GC/PinObjectAtGCTime_{System.Object}"/>
+      <arc id="1625722636752" source="pre_GC/RestartEEStop" target="GC/RestartEEStop"/>
+      <arc id="1625722683344" source="GC/SuspendEEStop" target="pre_GC/Triggered_{ALLOC_LARGE}"/>
+      <arc id="1625722700752" source="GC/Start_{ALLOC_LARGEB_GC}" target="pre_GC/SetGCHandle_{WEAK_SHORT}"/>
+      <arc id="1625722702816" source="GC/FinalizersStart" target="pre_GC/SampledObjectAllocation_{System.Byte[]}"/>
+      <arc id="1625722595312" source="pre_GC/BGCRevisit" target="GC/BGCRevisit"/>
+      <arc id="1625722596848" source="pre_GC/SuspendEEStop" target="GC/SuspendEEStop"/>
+    </page>
+  </net>
+</pnml>

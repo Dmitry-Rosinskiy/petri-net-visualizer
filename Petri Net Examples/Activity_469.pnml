@@ -1,0 +1,639 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<pnml>
+  <net id="" type="http://www.pnml.org/version-2009/grammar/pnmlcoremodel">
+    <name>
+      <text></text>
+    </name>
+    <page id="n0">
+      <place id="splace_in_GC/SampledObjectAllocation_{System.Byte[]}_GC/BGC1stConStop_0">
+        <name>
+          <text>splace_in_GC/SampledObjectAllocation_{System.Byte[]}_GC/BGC1stConStop_0</text>
+        </name>
+      </place>
+      <place id="intplace_GC/BGC2ndConStart">
+        <name>
+          <text>intplace_GC/BGC2ndConStart</text>
+        </name>
+      </place>
+      <place id="pre_GC/BGC1stNonCondStop">
+        <name>
+          <text>pre_GC/BGC1stNonCondStop</text>
+        </name>
+      </place>
+      <place id="splace_in_GC/BGCDrainMark_GC/RestartEEStop_0">
+        <name>
+          <text>splace_in_GC/BGCDrainMark_GC/RestartEEStop_0</text>
+        </name>
+      </place>
+      <place id="pre_GC/BGC2ndConStop">
+        <name>
+          <text>pre_GC/BGC2ndConStop</text>
+        </name>
+      </place>
+      <place id="splace_in_GC/SuspendEEStop_GC/RestartEEStop_0">
+        <name>
+          <text>splace_in_GC/SuspendEEStop_GC/RestartEEStop_0</text>
+        </name>
+      </place>
+      <place id="pre_GC/SampledObjectAllocation_{XoshiroImpl}">
+        <name>
+          <text>pre_GC/SampledObjectAllocation_{XoshiroImpl}</text>
+        </name>
+      </place>
+      <place id="intplace_GC/RestartEEStop">
+        <name>
+          <text>intplace_GC/RestartEEStop</text>
+        </name>
+      </place>
+      <place id="pre_GC/BGCDrainMark">
+        <name>
+          <text>pre_GC/BGCDrainMark</text>
+        </name>
+      </place>
+      <place id="pre_GC/RestartEEStart">
+        <name>
+          <text>pre_GC/RestartEEStart</text>
+        </name>
+      </place>
+      <place id="pre_GC/BGCRevisit">
+        <name>
+          <text>pre_GC/BGCRevisit</text>
+        </name>
+      </place>
+      <place id="splace_in_GC/SampledObjectAllocation_{XoshiroImpl}_0">
+        <name>
+          <text>splace_in_GC/SampledObjectAllocation_{XoshiroImpl}_0</text>
+        </name>
+      </place>
+      <place id="intplace_GC/SuspendEEStop">
+        <name>
+          <text>intplace_GC/SuspendEEStop</text>
+        </name>
+      </place>
+      <place id="source0">
+        <name>
+          <text>source0</text>
+        </name>
+        <initialMarking>
+          <text>1</text>
+        </initialMarking>
+      </place>
+      <place id="sink0">
+        <name>
+          <text>sink0</text>
+        </name>
+      </place>
+      <place id="splace_in_GC/SuspendEEStart_{OTHER}_GC/Stop_1">
+        <name>
+          <text>splace_in_GC/SuspendEEStart_{OTHER}_GC/Stop_1</text>
+        </name>
+      </place>
+      <place id="pre_GC/Start_{ALLOC_LARGEB_GC}">
+        <name>
+          <text>pre_GC/Start_{ALLOC_LARGEB_GC}</text>
+        </name>
+      </place>
+      <place id="splace_in_GC/SampledObjectAllocation_{ThreadSafeRandom}_GC/RestartEEStop_0">
+        <name>
+          <text>splace_in_GC/SampledObjectAllocation_{ThreadSafeRandom}_GC/RestartEEStop_0</text>
+        </name>
+      </place>
+      <place id="pre_GC/SuspendEEStart_{GC_PREP}">
+        <name>
+          <text>pre_GC/SuspendEEStart_{GC_PREP}</text>
+        </name>
+      </place>
+      <place id="pre_GC/BGC1stConStop">
+        <name>
+          <text>pre_GC/BGC1stConStop</text>
+        </name>
+      </place>
+      <place id="splace_in_GC/SampledObjectAllocation_{System.Byte[]}_GC/SuspendEEStart_{GC_PREP}_0">
+        <name>
+          <text>splace_in_GC/SampledObjectAllocation_{System.Byte[]}_GC/SuspendEEStart_{GC_PREP}_0</text>
+        </name>
+      </place>
+      <place id="intplace_GC/SampledObjectAllocation_{System.Byte[]}">
+        <name>
+          <text>intplace_GC/SampledObjectAllocation_{System.Byte[]}</text>
+        </name>
+      </place>
+      <place id="pre_GC/SuspendEEStart_{OTHER}">
+        <name>
+          <text>pre_GC/SuspendEEStart_{OTHER}</text>
+        </name>
+      </place>
+      <place id="pre_GC/RestartEEStop">
+        <name>
+          <text>pre_GC/RestartEEStop</text>
+        </name>
+      </place>
+      <place id="pre_GC/SampledObjectAllocation_{System.SByte[]}">
+        <name>
+          <text>pre_GC/SampledObjectAllocation_{System.SByte[]}</text>
+        </name>
+      </place>
+      <place id="pre_GC/SampledObjectAllocation_{System.Byte[]}">
+        <name>
+          <text>pre_GC/SampledObjectAllocation_{System.Byte[]}</text>
+        </name>
+      </place>
+      <place id="intplace_GC/Stop">
+        <name>
+          <text>intplace_GC/Stop</text>
+        </name>
+      </place>
+      <place id="intplace_GC/SuspendEEStart_{OTHER}">
+        <name>
+          <text>intplace_GC/SuspendEEStart_{OTHER}</text>
+        </name>
+      </place>
+      <place id="intplace_GC/BGCAllocWaitStart">
+        <name>
+          <text>intplace_GC/BGCAllocWaitStart</text>
+        </name>
+      </place>
+      <place id="splace_in_GC/SuspendEEStart_{OTHER}_GC/BGCAllocWaitStop_1">
+        <name>
+          <text>splace_in_GC/SuspendEEStart_{OTHER}_GC/BGCAllocWaitStop_1</text>
+        </name>
+      </place>
+      <place id="pre_GC/BGCStart">
+        <name>
+          <text>pre_GC/BGCStart</text>
+        </name>
+      </place>
+      <place id="intplace_GC/BGCRevisit">
+        <name>
+          <text>intplace_GC/BGCRevisit</text>
+        </name>
+      </place>
+      <place id="intplace_GC/SampledObjectAllocation_{System.SByte[]}">
+        <name>
+          <text>intplace_GC/SampledObjectAllocation_{System.SByte[]}</text>
+        </name>
+      </place>
+      <place id="splace_in_GC/SuspendEEStop_GC/SampledObjectAllocation_{System.Byte[]}_0">
+        <name>
+          <text>splace_in_GC/SuspendEEStop_GC/SampledObjectAllocation_{System.Byte[]}_0</text>
+        </name>
+      </place>
+      <place id="pre_GC/BGCAllocWaitStart">
+        <name>
+          <text>pre_GC/BGCAllocWaitStart</text>
+        </name>
+      </place>
+      <place id="pre_GC/SuspendEEStop">
+        <name>
+          <text>pre_GC/SuspendEEStop</text>
+        </name>
+      </place>
+      <place id="intplace_GC/SampledObjectAllocation_{ThreadSafeRandom}">
+        <name>
+          <text>intplace_GC/SampledObjectAllocation_{ThreadSafeRandom}</text>
+        </name>
+      </place>
+      <transition id="hid_44">
+        <name>
+          <text>hid_44</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="99d15134-3d79-4dc7-8991-83c54b2371ad"/>
+      </transition>
+      <transition id="GC/BGCStart">
+        <name>
+          <text>GC/BGCStart</text>
+        </name>
+      </transition>
+      <transition id="hid_21">
+        <name>
+          <text>hid_21</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="f70ee427-f670-4a08-81fb-0f4823b088ca"/>
+      </transition>
+      <transition id="hid_55">
+        <name>
+          <text>hid_55</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="c197bdff-7c57-4cd8-a61a-0fafc6dcc878"/>
+      </transition>
+      <transition id="hid_67">
+        <name>
+          <text>hid_67</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="ee2af85a-0a9d-4261-a0d8-36d34da6c80a"/>
+      </transition>
+      <transition id="GC/RestartEEStop">
+        <name>
+          <text>GC/RestartEEStop</text>
+        </name>
+      </transition>
+      <transition id="hid_51">
+        <name>
+          <text>hid_51</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="a226ea5e-42db-4240-9dd9-ada6e7f898cc"/>
+      </transition>
+      <transition id="GC/BGCAllocWaitStart">
+        <name>
+          <text>GC/BGCAllocWaitStart</text>
+        </name>
+      </transition>
+      <transition id="hid_61">
+        <name>
+          <text>hid_61</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="f6444330-ed02-4997-baa6-9a08c2ab5b76"/>
+      </transition>
+      <transition id="GC/SuspendEEStart_{OTHER}">
+        <name>
+          <text>GC/SuspendEEStart_{OTHER}</text>
+        </name>
+      </transition>
+      <transition id="hid_46">
+        <name>
+          <text>hid_46</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="c026c5de-1f98-4ea6-9bf3-338ad1f24980"/>
+      </transition>
+      <transition id="GC/SuspendEEStart_{GC_PREP}">
+        <name>
+          <text>GC/SuspendEEStart_{GC_PREP}</text>
+        </name>
+      </transition>
+      <transition id="hid_57">
+        <name>
+          <text>hid_57</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="2ce47da5-1356-46cd-ac58-8b5fc01d037f"/>
+      </transition>
+      <transition id="GC/BGC1stNonCondStop">
+        <name>
+          <text>GC/BGC1stNonCondStop</text>
+        </name>
+      </transition>
+      <transition id="hid_16">
+        <name>
+          <text>hid_16</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="fa9b4989-b9f0-4dbf-803c-44923b5fdc90"/>
+      </transition>
+      <transition id="hid_63">
+        <name>
+          <text>hid_63</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="41bf8ae7-1834-43c7-b3ec-998fb6037664"/>
+      </transition>
+      <transition id="GC/BGC2ndConStop">
+        <name>
+          <text>GC/BGC2ndConStop</text>
+        </name>
+      </transition>
+      <transition id="GC/BGCDrainMark">
+        <name>
+          <text>GC/BGCDrainMark</text>
+        </name>
+      </transition>
+      <transition id="GC/Start_{ALLOC_LARGEB_GC}">
+        <name>
+          <text>GC/Start_{ALLOC_LARGEB_GC}</text>
+        </name>
+      </transition>
+      <transition id="GC/SampledObjectAllocation_{XoshiroImpl}">
+        <name>
+          <text>GC/SampledObjectAllocation_{XoshiroImpl}</text>
+        </name>
+      </transition>
+      <transition id="hid_3">
+        <name>
+          <text>hid_3</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="410c83ce-9ea6-4663-9b72-101fbf8dc0a6"/>
+      </transition>
+      <transition id="hid_15">
+        <name>
+          <text>hid_15</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="e636335a-a4f5-4689-9610-94fca24690d0"/>
+      </transition>
+      <transition id="GC/BGC2ndNonConStart">
+        <name>
+          <text>GC/BGC2ndNonConStart</text>
+        </name>
+      </transition>
+      <transition id="hid_68">
+        <name>
+          <text>hid_68</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="52ed389f-e6a6-41d6-af0e-070915532cb4"/>
+      </transition>
+      <transition id="hid_20">
+        <name>
+          <text>hid_20</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="e54fed5d-531c-4e3e-aaed-d0a7d3a187fc"/>
+      </transition>
+      <transition id="GC/BGC1stConStop">
+        <name>
+          <text>GC/BGC1stConStop</text>
+        </name>
+      </transition>
+      <transition id="hid_78">
+        <name>
+          <text>hid_78</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="0b25a8c7-d60e-4fd2-8a2e-2fb4152e8998"/>
+      </transition>
+      <transition id="hid_80">
+        <name>
+          <text>hid_80</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="0dda729b-b38c-4358-a608-32f5e40a96c7"/>
+      </transition>
+      <transition id="GC/BGC2ndNonConStop">
+        <name>
+          <text>GC/BGC2ndNonConStop</text>
+        </name>
+      </transition>
+      <transition id="GC/SampledObjectAllocation_{System.SByte[]}">
+        <name>
+          <text>GC/SampledObjectAllocation_{System.SByte[]}</text>
+        </name>
+      </transition>
+      <transition id="hid_62">
+        <name>
+          <text>hid_62</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="826dbfea-592e-46e6-9fc5-a03acb88ab56"/>
+      </transition>
+      <transition id="GC/RestartEEStart">
+        <name>
+          <text>GC/RestartEEStart</text>
+        </name>
+      </transition>
+      <transition id="hid_74">
+        <name>
+          <text>hid_74</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="07b99b72-82c7-4cb0-ac38-5b8c509d2cf4"/>
+      </transition>
+      <transition id="hid_77">
+        <name>
+          <text>hid_77</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="f85dd148-b1a8-427c-bb9d-810ddd0a368a"/>
+      </transition>
+      <transition id="hid_26">
+        <name>
+          <text>hid_26</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="508a9973-ec3e-4b78-b8b7-1e1a38a0a4d0"/>
+      </transition>
+      <transition id="GC/SampledObjectAllocation_{System.Byte[]}">
+        <name>
+          <text>GC/SampledObjectAllocation_{System.Byte[]}</text>
+        </name>
+      </transition>
+      <transition id="hid_2">
+        <name>
+          <text>hid_2</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="05b533af-489d-4413-8b92-b28983f3c7f2"/>
+      </transition>
+      <transition id="hid_71">
+        <name>
+          <text>hid_71</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="ff5a5bf1-d5a1-4c0a-99b8-115edbdff9ec"/>
+      </transition>
+      <transition id="GC/SampledObjectAllocation_{ThreadSafeRandom}">
+        <name>
+          <text>GC/SampledObjectAllocation_{ThreadSafeRandom}</text>
+        </name>
+      </transition>
+      <transition id="GC/Triggered_{ALLOC_LARGE}">
+        <name>
+          <text>GC/Triggered_{ALLOC_LARGE}</text>
+        </name>
+      </transition>
+      <transition id="hid_17">
+        <name>
+          <text>hid_17</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="09535676-7680-4321-ad4b-f75441cec696"/>
+      </transition>
+      <transition id="hid_47">
+        <name>
+          <text>hid_47</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="0f990ec9-92df-48a6-b17d-85dc5e422d68"/>
+      </transition>
+      <transition id="GC/BGC2ndConStart">
+        <name>
+          <text>GC/BGC2ndConStart</text>
+        </name>
+      </transition>
+      <transition id="hid_59">
+        <name>
+          <text>hid_59</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="52a30184-b633-4b2d-8e4c-01613c9c6293"/>
+      </transition>
+      <transition id="hid_34">
+        <name>
+          <text>hid_34</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="e5035fb6-9c33-4121-9072-faef9d3146c3"/>
+      </transition>
+      <transition id="GC/BGCAllocWaitStop">
+        <name>
+          <text>GC/BGCAllocWaitStop</text>
+        </name>
+      </transition>
+      <transition id="hid_23">
+        <name>
+          <text>hid_23</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="82c3f745-63e0-42b8-8ce5-cc7f16fd93d4"/>
+      </transition>
+      <transition id="GC/BGCRevisit">
+        <name>
+          <text>GC/BGCRevisit</text>
+        </name>
+      </transition>
+      <transition id="hid_42">
+        <name>
+          <text>hid_42</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="b56f97c0-adbb-4ce9-82b3-29294b1520e7"/>
+      </transition>
+      <transition id="GC/SuspendEEStart_{GC}">
+        <name>
+          <text>GC/SuspendEEStart_{GC}</text>
+        </name>
+      </transition>
+      <transition id="GC/Stop">
+        <name>
+          <text>GC/Stop</text>
+        </name>
+      </transition>
+      <transition id="hid_69">
+        <name>
+          <text>hid_69</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="0c1dee1d-1053-4612-8f2d-8316f66ac2aa"/>
+      </transition>
+      <transition id="hid_76">
+        <name>
+          <text>hid_76</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="805a991e-b762-4fdc-adab-99e07c2c044b"/>
+      </transition>
+      <transition id="hid_53">
+        <name>
+          <text>hid_53</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="0ac874d1-ab0f-45e3-a6df-b446d4c6aca8"/>
+      </transition>
+      <transition id="GC/SuspendEEStop">
+        <name>
+          <text>GC/SuspendEEStop</text>
+        </name>
+      </transition>
+      <transition id="hid_27">
+        <name>
+          <text>hid_27</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="41fcb615-e629-4097-9301-ca7d8d5b6965"/>
+      </transition>
+      <arc id="1625722190336" source="hid_2" target="pre_GC/BGC1stConStop"/>
+      <arc id="1625721658384" source="hid_23" target="pre_GC/SuspendEEStart_{OTHER}"/>
+      <arc id="1625721718288" source="hid_34" target="pre_GC/SampledObjectAllocation_{XoshiroImpl}"/>
+      <arc id="1625723160080" source="intplace_GC/RestartEEStop" target="hid_62"/>
+      <arc id="1625721680416" source="splace_in_GC/SuspendEEStart_{OTHER}_GC/Stop_1" target="hid_26"/>
+      <arc id="1625721743392" source="intplace_GC/SampledObjectAllocation_{System.Byte[]}" target="hid_42"/>
+      <arc id="1625721744928" source="hid_47" target="splace_in_GC/SuspendEEStop_GC/SampledObjectAllocation_{System.Byte[]}_0"/>
+      <arc id="1625723160608" source="hid_63" target="splace_in_GC/SampledObjectAllocation_{XoshiroImpl}_0"/>
+      <arc id="1625723172896" source="GC/BGCAllocWaitStart" target="intplace_GC/BGCAllocWaitStart"/>
+      <arc id="1625723171888" source="hid_71" target="splace_in_GC/SuspendEEStart_{OTHER}_GC/Stop_1"/>
+      <arc id="1625723173424" source="intplace_GC/BGCAllocWaitStart" target="hid_76"/>
+      <arc id="1625723206192" source="hid_57" target="pre_GC/BGCRevisit"/>
+      <arc id="1625723206672" source="hid_78" target="pre_GC/SampledObjectAllocation_{System.SByte[]}"/>
+      <arc id="1625723216944" source="splace_in_GC/SampledObjectAllocation_{ThreadSafeRandom}_GC/RestartEEStop_0" target="GC/SampledObjectAllocation_{ThreadSafeRandom}"/>
+      <arc id="1625736076352" source="pre_GC/SuspendEEStop" target="GC/SuspendEEStop"/>
+      <arc id="1625723173952" source="GC/SampledObjectAllocation_{System.SByte[]}" target="intplace_GC/SampledObjectAllocation_{System.SByte[]}"/>
+      <arc id="1625723216752" source="hid_69" target="pre_GC/SampledObjectAllocation_{System.Byte[]}"/>
+      <arc id="1625721763920" source="intplace_GC/SuspendEEStart_{OTHER}" target="hid_53"/>
+      <arc id="1625723205712" source="hid_46" target="pre_GC/SuspendEEStart_{OTHER}"/>
+      <arc id="1625723207248" source="GC/BGCAllocWaitStop" target="splace_in_GC/SuspendEEStart_{OTHER}_GC/BGCAllocWaitStop_1"/>
+      <arc id="1625723216464" source="GC/BGC1stNonCondStop" target="pre_GC/RestartEEStart"/>
+      <arc id="1625721657952" source="pre_GC/SuspendEEStart_{OTHER}" target="GC/SuspendEEStart_{OTHER}"/>
+      <arc id="1625721743968" source="intplace_GC/SampledObjectAllocation_{System.Byte[]}" target="hid_44"/>
+      <arc id="1625723216656" source="hid_55" target="pre_GC/BGC1stConStop"/>
+      <arc id="1625722190960" source="splace_in_GC/SampledObjectAllocation_{System.Byte[]}_GC/BGC1stConStop_0" target="hid_3"/>
+      <arc id="1625721764976" source="intplace_GC/BGCRevisit" target="hid_55"/>
+      <arc id="1625723161712" source="intplace_GC/RestartEEStop" target="hid_67"/>
+      <arc id="1625723170928" source="intplace_GC/BGC2ndConStart" target="hid_69"/>
+      <arc id="1625723174000" source="intplace_GC/SampledObjectAllocation_{System.SByte[]}" target="hid_77"/>
+      <arc id="1625723206768" source="hid_42" target="pre_GC/BGC2ndConStop"/>
+      <arc id="1625723215984" source="hid_77" target="pre_GC/SampledObjectAllocation_{System.Byte[]}"/>
+      <arc id="1625723217520" source="intplace_GC/SuspendEEStart_{OTHER}" target="hid_17"/>
+      <arc id="1625723172800" source="hid_74" target="sink0"/>
+      <arc id="1625721657472" source="splace_in_GC/BGCDrainMark_GC/RestartEEStop_0" target="hid_21"/>
+      <arc id="1625721741952" source="pre_GC/BGCStart" target="GC/BGCStart"/>
+      <arc id="1625723159168" source="hid_59" target="splace_in_GC/BGCDrainMark_GC/RestartEEStop_0"/>
+      <arc id="1625723160704" source="hid_63" target="splace_in_GC/SampledObjectAllocation_{ThreadSafeRandom}_GC/RestartEEStop_0"/>
+      <arc id="1625723162240" source="GC/BGC2ndConStart" target="intplace_GC/BGC2ndConStart"/>
+      <arc id="1625721762960" source="intplace_GC/SuspendEEStop" target="hid_51"/>
+      <arc id="1625723159696" source="intplace_GC/RestartEEStop" target="hid_61"/>
+      <arc id="1625723217040" source="intplace_GC/Stop" target="GC/SampledObjectAllocation_{ThreadSafeRandom}"/>
+      <arc id="1625721656992" source="splace_in_GC/BGCDrainMark_GC/RestartEEStop_0" target="hid_20"/>
+      <arc id="1625721744544" source="intplace_GC/SampledObjectAllocation_{System.Byte[]}" target="hid_46"/>
+      <arc id="1625723160224" source="hid_62" target="splace_in_GC/SampledObjectAllocation_{XoshiroImpl}_0"/>
+      <arc id="1625723158688" source="GC/Start_{ALLOC_LARGEB_GC}" target="pre_GC/BGCStart"/>
+      <arc id="1625723203744" source="GC/SampledObjectAllocation_{ThreadSafeRandom}" target="intplace_GC/SampledObjectAllocation_{ThreadSafeRandom}"/>
+      <arc id="1625722267824" source="pre_GC/SuspendEEStart_{GC_PREP}" target="GC/SuspendEEStart_{GC_PREP}"/>
+      <arc id="1625736076976" source="splace_in_GC/SuspendEEStop_GC/RestartEEStop_0" target="hid_16"/>
+      <arc id="1625721765552" source="intplace_GC/BGCRevisit" target="hid_57"/>
+      <arc id="1625723205808" source="GC/SuspendEEStart_{GC}" target="pre_GC/SuspendEEStop"/>
+      <arc id="1625723207344" source="GC/BGCAllocWaitStop" target="pre_GC/SampledObjectAllocation_{System.Byte[]}"/>
+      <arc id="1625723216560" source="GC/BGC2ndNonConStart" target="pre_GC/BGCRevisit"/>
+      <arc id="1625723218096" source="intplace_GC/SampledObjectAllocation_{ThreadSafeRandom}" target="hid_26"/>
+      <arc id="1625721717952" source="pre_GC/BGCAllocWaitStart" target="GC/BGCAllocWaitStart"/>
+      <arc id="1625721764544" source="GC/RestartEEStart" target="pre_GC/RestartEEStop"/>
+      <arc id="1625723204464" source="GC/BGCStart" target="pre_GC/BGC1stNonCondStop"/>
+      <arc id="1625721718480" source="splace_in_GC/SampledObjectAllocation_{XoshiroImpl}_0" target="hid_34"/>
+      <arc id="1625723161808" source="hid_67" target="sink0"/>
+      <arc id="1625723218000" source="intplace_GC/Stop" target="GC/BGCAllocWaitStop"/>
+      <arc id="1625723216272" source="GC/BGC1stConStop" target="splace_in_GC/SampledObjectAllocation_{System.Byte[]}_GC/BGC1stConStop_0"/>
+      <arc id="1625723206096" source="hid_51" target="pre_GC/RestartEEStart"/>
+      <arc id="1625721762528" source="GC/SuspendEEStop" target="intplace_GC/SuspendEEStop"/>
+      <arc id="1625723159264" source="hid_59" target="pre_GC/BGCAllocWaitStart"/>
+      <arc id="1625736076016" source="source0" target="hid_15"/>
+      <arc id="1625723217136" source="intplace_GC/RestartEEStop" target="GC/BGC2ndConStart"/>
+      <arc id="1625723217904" source="intplace_GC/RestartEEStop" target="GC/Stop"/>
+      <arc id="1625723206000" source="hid_53" target="pre_GC/SampledObjectAllocation_{System.Byte[]}"/>
+      <arc id="1625736076544" source="hid_16" target="pre_GC/SuspendEEStop"/>
+      <arc id="1625721658624" source="splace_in_GC/SuspendEEStart_{OTHER}_GC/Stop_1" target="hid_23"/>
+      <arc id="1625721716992" source="pre_GC/RestartEEStop" target="GC/RestartEEStop"/>
+      <arc id="1625723217808" source="intplace_GC/SuspendEEStop" target="GC/Triggered_{ALLOC_LARGE}"/>
+      <arc id="1625723207632" source="hid_68" target="pre_GC/BGC2ndConStop"/>
+      <arc id="1625723162384" source="intplace_GC/BGC2ndConStart" target="hid_68"/>
+      <arc id="1625723205904" source="hid_61" target="pre_GC/SampledObjectAllocation_{System.Byte[]}"/>
+      <arc id="1625723216080" source="GC/SuspendEEStart_{GC_PREP}" target="pre_GC/SuspendEEStop"/>
+      <arc id="1625721764640" source="GC/Triggered_{ALLOC_LARGE}" target="pre_GC/Start_{ALLOC_LARGEB_GC}"/>
+      <arc id="1625723207536" source="hid_62" target="pre_GC/SampledObjectAllocation_{System.SByte[]}"/>
+      <arc id="1625722191152" source="splace_in_GC/SampledObjectAllocation_{System.Byte[]}_GC/SuspendEEStart_{GC_PREP}_0" target="hid_3"/>
+      <arc id="1625721743152" source="GC/SampledObjectAllocation_{System.Byte[]}" target="intplace_GC/SampledObjectAllocation_{System.Byte[]}"/>
+      <arc id="1625723203888" source="intplace_GC/SampledObjectAllocation_{ThreadSafeRandom}" target="hid_80"/>
+      <arc id="1625723205424" source="hid_44" target="pre_GC/SampledObjectAllocation_{System.Byte[]}"/>
+      <arc id="1625723206960" source="hid_80" target="pre_GC/SampledObjectAllocation_{XoshiroImpl}"/>
+      <arc id="1625723216176" source="hid_76" target="pre_GC/SuspendEEStart_{OTHER}"/>
+      <arc id="1625723217712" source="intplace_GC/BGCRevisit" target="GC/BGC2ndNonConStop"/>
+      <arc id="1625736077120" source="hid_17" target="pre_GC/SuspendEEStop"/>
+      <arc id="1625721719104" source="pre_GC/SampledObjectAllocation_{System.SByte[]}" target="GC/SampledObjectAllocation_{System.SByte[]}"/>
+      <arc id="1625721742144" source="pre_GC/BGC1stNonCondStop" target="GC/BGC1stNonCondStop"/>
+      <arc id="1625723207440" source="hid_77" target="pre_GC/SuspendEEStart_{OTHER}"/>
+      <arc id="1625723217616" source="intplace_GC/SampledObjectAllocation_{System.Byte[]}" target="GC/SuspendEEStart_{GC}"/>
+      <arc id="1625722190672" source="pre_GC/SampledObjectAllocation_{System.Byte[]}" target="GC/SampledObjectAllocation_{System.Byte[]}"/>
+      <arc id="1625736076112" source="hid_15" target="pre_GC/BGC2ndConStop"/>
+      <arc id="1625723206480" source="GC/SuspendEEStart_{GC_PREP}" target="splace_in_GC/SampledObjectAllocation_{System.Byte[]}_GC/SuspendEEStart_{GC_PREP}_0"/>
+      <arc id="1625723217232" source="intplace_GC/BGCAllocWaitStart" target="hid_20"/>
+      <arc id="1625736075104" source="pre_GC/BGC2ndConStop" target="GC/BGC2ndConStop"/>
+      <arc id="1625723172704" source="intplace_GC/Stop" target="hid_74"/>
+      <arc id="1625721680752" source="source0" target="hid_27"/>
+      <arc id="1625722190720" source="hid_3" target="pre_GC/SampledObjectAllocation_{System.Byte[]}"/>
+      <arc id="1625721656704" source="pre_GC/BGCDrainMark" target="GC/BGCDrainMark"/>
+      <arc id="1625721681280" source="pre_GC/RestartEEStart" target="GC/RestartEEStart"/>
+      <arc id="1625721682816" source="pre_GC/BGCRevisit" target="GC/BGCRevisit"/>
+      <arc id="1625721718144" source="pre_GC/SampledObjectAllocation_{XoshiroImpl}" target="GC/SampledObjectAllocation_{XoshiroImpl}"/>
+      <arc id="1625723159936" source="hid_61" target="splace_in_GC/SuspendEEStop_GC/RestartEEStop_0"/>
+      <arc id="1625723217424" source="intplace_GC/SuspendEEStop" target="GC/BGC2ndNonConStart"/>
+      <arc id="1625723205520" source="GC/BGC2ndConStop" target="pre_GC/SuspendEEStart_{GC_PREP}"/>
+      <arc id="1625722189712" source="pre_GC/BGC1stConStop" target="GC/BGC1stConStop"/>
+      <arc id="1625721680272" source="hid_26" target="pre_GC/SuspendEEStart_{OTHER}"/>
+      <arc id="1625723160464" source="intplace_GC/RestartEEStop" target="hid_63"/>
+      <arc id="1625722190240" source="source0" target="hid_2"/>
+      <arc id="1625723171744" source="intplace_GC/Stop" target="hid_71"/>
+      <arc id="1625721656752" source="hid_20" target="pre_GC/BGCDrainMark"/>
+      <arc id="1625723217328" source="intplace_GC/SampledObjectAllocation_{System.Byte[]}" target="hid_21"/>
+      <arc id="1625723207056" source="GC/BGC2ndNonConStop" target="pre_GC/RestartEEStart"/>
+      <arc id="1625721658816" source="splace_in_GC/SuspendEEStart_{OTHER}_GC/BGCAllocWaitStop_1" target="hid_23"/>
+      <arc id="1625721717184" source="pre_GC/Start_{ALLOC_LARGEB_GC}" target="GC/Start_{ALLOC_LARGEB_GC}"/>
+      <arc id="1625721744832" source="intplace_GC/SampledObjectAllocation_{System.Byte[]}" target="hid_47"/>
+      <arc id="1625721763776" source="GC/SuspendEEStart_{OTHER}" target="intplace_GC/SuspendEEStart_{OTHER}"/>
+      <arc id="1625723171264" source="GC/Stop" target="intplace_GC/Stop"/>
+      <arc id="1625736077264" source="splace_in_GC/SuspendEEStop_GC/SampledObjectAllocation_{System.Byte[]}_0" target="hid_17"/>
+      <arc id="1625721680848" source="hid_27" target="pre_GC/SuspendEEStart_{OTHER}"/>
+      <arc id="1625721765840" source="GC/RestartEEStop" target="intplace_GC/RestartEEStop"/>
+      <arc id="1625721764832" source="GC/BGCRevisit" target="intplace_GC/BGCRevisit"/>
+      <arc id="1625736076784" source="splace_in_GC/SuspendEEStop_GC/SampledObjectAllocation_{System.Byte[]}_0" target="hid_16"/>
+      <arc id="1625721657328" source="hid_21" target="pre_GC/BGCDrainMark"/>
+      <arc id="1625723159024" source="intplace_GC/RestartEEStop" target="hid_59"/>
+      <arc id="1625723174384" source="intplace_GC/SampledObjectAllocation_{System.SByte[]}" target="hid_78"/>
+      <arc id="1625723205616" source="GC/SampledObjectAllocation_{XoshiroImpl}" target="pre_GC/SampledObjectAllocation_{System.SByte[]}"/>
+      <arc id="1625723206864" source="hid_71" target="pre_GC/SampledObjectAllocation_{System.Byte[]}"/>
+      <arc id="1625723207152" source="GC/BGCDrainMark" target="pre_GC/BGCRevisit"/>
+      <arc id="1625723216368" source="GC/BGC1stConStop" target="pre_GC/SuspendEEStart_{GC_PREP}"/>
+    </page>
+  </net>
+</pnml>

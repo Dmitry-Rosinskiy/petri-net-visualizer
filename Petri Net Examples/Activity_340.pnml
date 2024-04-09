@@ -1,0 +1,1442 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<pnml>
+  <net id="" type="http://www.pnml.org/version-2009/grammar/pnmlcoremodel">
+    <name>
+      <text></text>
+    </name>
+    <page id="n0">
+      <place id="pre_Loader/ModuleLoad_{System.Runtime.InteropServices}">
+        <name>
+          <text>pre_Loader/ModuleLoad_{System.Runtime.InteropServices}</text>
+        </name>
+      </place>
+      <place id="intplace_GC/RestartEEStop">
+        <name>
+          <text>intplace_GC/RestartEEStop</text>
+        </name>
+      </place>
+      <place id="pre_Loader/AssemblyLoad_{System.Text.Encoding.Extensions}">
+        <name>
+          <text>pre_Loader/AssemblyLoad_{System.Text.Encoding.Extensions}</text>
+        </name>
+      </place>
+      <place id="pre_GC/SetGCHandle_{STRONG}">
+        <name>
+          <text>pre_GC/SetGCHandle_{STRONG}</text>
+        </name>
+      </place>
+      <place id="pre_GC/SampledObjectAllocation_{SyncTextWriter}">
+        <name>
+          <text>pre_GC/SampledObjectAllocation_{SyncTextWriter}</text>
+        </name>
+      </place>
+      <place id="pre_GC/SampledObjectAllocation_{System.Text.OSEncoder}">
+        <name>
+          <text>pre_GC/SampledObjectAllocation_{System.Text.OSEncoder}</text>
+        </name>
+      </place>
+      <place id="pre_AssemblyLoader/ResolutionAttemptedApplicationAssembliesSuccess_{System.Runtime.InteropServices}">
+        <name>
+          <text>pre_AssemblyLoader/ResolutionAttemptedApplicationAssembliesSuccess_{System.Runtime.InteropServices}</text>
+        </name>
+      </place>
+      <place id="pre_GC/SampledObjectAllocation_{System.Text.DecoderReplacementFallback}">
+        <name>
+          <text>pre_GC/SampledObjectAllocation_{System.Text.DecoderReplacementFallback}</text>
+        </name>
+      </place>
+      <place id="pre_Loader/DomainModuleLoad_{C:\Program Files\dotnet\shared\Microsoft.NETCore.App\6.0.15\System.Threading.dll}">
+        <name>
+          <text>pre_Loader/DomainModuleLoad_{C:\Program Files\dotnet\shared\Microsoft.NETCore.App\6.0.15\System.Threading.dll}</text>
+        </name>
+      </place>
+      <place id="intplace_GC/SampledObjectAllocation_{System.Object}">
+        <name>
+          <text>intplace_GC/SampledObjectAllocation_{System.Object}</text>
+        </name>
+      </place>
+      <place id="pre_GC/SuspendEEStart_{OTHER}">
+        <name>
+          <text>pre_GC/SuspendEEStart_{OTHER}</text>
+        </name>
+      </place>
+      <place id="splace_in_GC/SuspendEEStart_{OTHER}_AssemblyLoader/ResolutionAttemptedApplicationAssembliesSuccess_{System.Runtime.InteropServices}_0">
+        <name>
+          <text>splace_in_GC/SuspendEEStart_{OTHER}_AssemblyLoader/ResolutionAttemptedApplicationAssembliesSuccess_{System.Runtime.InteropServices}_0</text>
+        </name>
+      </place>
+      <place id="source0">
+        <name>
+          <text>source0</text>
+        </name>
+        <initialMarking>
+          <text>1</text>
+        </initialMarking>
+      </place>
+      <place id="splace_in_GC/SampledObjectAllocation_{System.SByte[]}_1">
+        <name>
+          <text>splace_in_GC/SampledObjectAllocation_{System.SByte[]}_1</text>
+        </name>
+      </place>
+      <place id="splace_in_GC/SuspendEEStart_{OTHER}_GC/SampledObjectAllocation_{System.Char[]}_8">
+        <name>
+          <text>splace_in_GC/SuspendEEStart_{OTHER}_GC/SampledObjectAllocation_{System.Char[]}_8</text>
+        </name>
+      </place>
+      <place id="pre_AssemblyLoader/KnownPathProbed_{C:\Program Files\dotnet\shared\Microsoft.NETCore.App\6.0.15\System.Threading.dll}">
+        <name>
+          <text>pre_AssemblyLoader/KnownPathProbed_{C:\Program Files\dotnet\shared\Microsoft.NETCore.App\6.0.15\System.Threading.dll}</text>
+        </name>
+      </place>
+      <place id="pre_GC/SampledObjectAllocation_{System.Object[]}">
+        <name>
+          <text>pre_GC/SampledObjectAllocation_{System.Object[]}</text>
+        </name>
+      </place>
+      <place id="pre_Loader/AssemblyLoad_{System.Threading}">
+        <name>
+          <text>pre_Loader/AssemblyLoad_{System.Threading}</text>
+        </name>
+      </place>
+      <place id="intplace_AssemblyLoader/Stop_{System.Threading}">
+        <name>
+          <text>intplace_AssemblyLoader/Stop_{System.Threading}</text>
+        </name>
+      </place>
+      <place id="intplace_AssemblyLoader/Start_{System.Text.Encoding.Extensions}">
+        <name>
+          <text>intplace_AssemblyLoader/Start_{System.Text.Encoding.Extensions}</text>
+        </name>
+      </place>
+      <place id="splace_in_GC/SuspendEEStop_GC/SampledObjectAllocation_{System.Threading.Tasks.TaskFactory}_0">
+        <name>
+          <text>splace_in_GC/SuspendEEStop_GC/SampledObjectAllocation_{System.Threading.Tasks.TaskFactory}_0</text>
+        </name>
+      </place>
+      <place id="intplace_GC/SampledObjectAllocation_{System.Threading.Tasks.Task`1[System.Threading.Tasks.VoidTaskResult]}">
+        <name>
+          <text>intplace_GC/SampledObjectAllocation_{System.Threading.Tasks.Task`1[System.Threading.Tasks.VoidTaskResult]}</text>
+        </name>
+      </place>
+      <place id="intplace_GC/SampledObjectAllocation_{System.Char[]}">
+        <name>
+          <text>intplace_GC/SampledObjectAllocation_{System.Char[]}</text>
+        </name>
+      </place>
+      <place id="splace_in_GC/SuspendEEStart_{OTHER}_Loader/DomainModuleLoad_{C:\Program Files\dotnet\shared\Microsoft.NETCore.App\6.0.15\System.Text.Encoding.Extensions.dll}_16">
+        <name>
+          <text>splace_in_GC/SuspendEEStart_{OTHER}_Loader/DomainModuleLoad_{C:\Program Files\dotnet\shared\Microsoft.NETCore.App\6.0.15\System.Text.Encoding.Extensions.dll}_16</text>
+        </name>
+      </place>
+      <place id="pre_GC/SuspendEEStop">
+        <name>
+          <text>pre_GC/SuspendEEStop</text>
+        </name>
+      </place>
+      <place id="splace_in_GC/SuspendEEStart_{OTHER}_GC/SampledObjectAllocation_{System.SByte[]}_9">
+        <name>
+          <text>splace_in_GC/SuspendEEStart_{OTHER}_GC/SampledObjectAllocation_{System.SByte[]}_9</text>
+        </name>
+      </place>
+      <place id="pre_GC/SampledObjectAllocation_{System.IO.StreamWriter}">
+        <name>
+          <text>pre_GC/SampledObjectAllocation_{System.IO.StreamWriter}</text>
+        </name>
+      </place>
+      <place id="pre_AssemblyLoader/ResolutionAttemptedFindInLoadContextAssemblyNotFound_{System.Text.Encoding.Extensions}">
+        <name>
+          <text>pre_AssemblyLoader/ResolutionAttemptedFindInLoadContextAssemblyNotFound_{System.Text.Encoding.Extensions}</text>
+        </name>
+      </place>
+      <place id="pre_GC/SampledObjectAllocation_{&lt;&gt;c}">
+        <name>
+          <text>pre_GC/SampledObjectAllocation_{&lt;&gt;c}</text>
+        </name>
+      </place>
+      <place id="pre_AssemblyLoader/ResolutionAttemptedApplicationAssembliesSuccess_{System.Text.Encoding.Extensions}">
+        <name>
+          <text>pre_AssemblyLoader/ResolutionAttemptedApplicationAssembliesSuccess_{System.Text.Encoding.Extensions}</text>
+        </name>
+      </place>
+      <place id="intplace_GC/SuspendEEStart_{OTHER}">
+        <name>
+          <text>intplace_GC/SuspendEEStart_{OTHER}</text>
+        </name>
+      </place>
+      <place id="intplace_GC/SampledObjectAllocation_{System.Text.EncoderReplacementFallback}">
+        <name>
+          <text>intplace_GC/SampledObjectAllocation_{System.Text.EncoderReplacementFallback}</text>
+        </name>
+      </place>
+      <place id="sink0">
+        <name>
+          <text>sink0</text>
+        </name>
+      </place>
+      <place id="pre_GC/SampledObjectAllocation_{System.SByte[]}">
+        <name>
+          <text>pre_GC/SampledObjectAllocation_{System.SByte[]}</text>
+        </name>
+      </place>
+      <place id="intplace_GC/SampledObjectAllocation_{System.Reflection.RuntimeAssembly}">
+        <name>
+          <text>intplace_GC/SampledObjectAllocation_{System.Reflection.RuntimeAssembly}</text>
+        </name>
+      </place>
+      <place id="intplace_GC/SampledObjectAllocation_{System.Threading.ExecutionContext}">
+        <name>
+          <text>intplace_GC/SampledObjectAllocation_{System.Threading.ExecutionContext}</text>
+        </name>
+      </place>
+      <place id="pre_AssemblyLoader/KnownPathProbed_{C:\Program Files\dotnet\shared\Microsoft.NETCore.App\6.0.15\System.Text.Encoding.Extensions.dll}">
+        <name>
+          <text>pre_AssemblyLoader/KnownPathProbed_{C:\Program Files\dotnet\shared\Microsoft.NETCore.App\6.0.15\System.Text.Encoding.Extensions.dll}</text>
+        </name>
+      </place>
+      <place id="pre_GC/RestartEEStart">
+        <name>
+          <text>pre_GC/RestartEEStart</text>
+        </name>
+      </place>
+      <place id="intplace_GC/SampledObjectAllocation_{System.String}">
+        <name>
+          <text>intplace_GC/SampledObjectAllocation_{System.String}</text>
+        </name>
+      </place>
+      <place id="intplace_AssemblyLoader/Stop_{System.Text.Encoding.Extensions}">
+        <name>
+          <text>intplace_AssemblyLoader/Stop_{System.Text.Encoding.Extensions}</text>
+        </name>
+      </place>
+      <place id="intplace_AssemblyLoader/Stop_{System.Runtime.InteropServices}">
+        <name>
+          <text>intplace_AssemblyLoader/Stop_{System.Runtime.InteropServices}</text>
+        </name>
+      </place>
+      <place id="pre_GC/SampledObjectAllocation_{System.String}">
+        <name>
+          <text>pre_GC/SampledObjectAllocation_{System.String}</text>
+        </name>
+      </place>
+      <place id="pre_GC/SampledObjectAllocation_{System.Text.EncoderReplacementFallback}">
+        <name>
+          <text>pre_GC/SampledObjectAllocation_{System.Text.EncoderReplacementFallback}</text>
+        </name>
+      </place>
+      <place id="intplace_Loader/AssemblyLoad_{System.Runtime.InteropServices}">
+        <name>
+          <text>intplace_Loader/AssemblyLoad_{System.Runtime.InteropServices}</text>
+        </name>
+      </place>
+      <place id="intplace_GC/SampledObjectAllocation_{System.Threading.Tasks.TaskFactory}">
+        <name>
+          <text>intplace_GC/SampledObjectAllocation_{System.Threading.Tasks.TaskFactory}</text>
+        </name>
+      </place>
+      <place id="intplace_GC/SampledObjectAllocation_{&lt;&gt;c}">
+        <name>
+          <text>intplace_GC/SampledObjectAllocation_{&lt;&gt;c}</text>
+        </name>
+      </place>
+      <place id="splace_in_GC/SampledObjectAllocation_{System.String}_GC/SampledObjectAllocation_{System.Object}_4">
+        <name>
+          <text>splace_in_GC/SampledObjectAllocation_{System.String}_GC/SampledObjectAllocation_{System.Object}_4</text>
+        </name>
+      </place>
+      <place id="pre_GC/SampledObjectAllocation_{System.Object}">
+        <name>
+          <text>pre_GC/SampledObjectAllocation_{System.Object}</text>
+        </name>
+      </place>
+      <place id="pre_Loader/ModuleLoad_{System.Threading}">
+        <name>
+          <text>pre_Loader/ModuleLoad_{System.Threading}</text>
+        </name>
+      </place>
+      <place id="splace_in_GC/SuspendEEStop_GC/SampledObjectAllocation_{System.Object}_0">
+        <name>
+          <text>splace_in_GC/SuspendEEStop_GC/SampledObjectAllocation_{System.Object}_0</text>
+        </name>
+      </place>
+      <place id="splace_in_GC/SuspendEEStart_{OTHER}_13">
+        <name>
+          <text>splace_in_GC/SuspendEEStart_{OTHER}_13</text>
+        </name>
+      </place>
+      <place id="intplace_GC/SampledObjectAllocation_{NullTextWriter}">
+        <name>
+          <text>intplace_GC/SampledObjectAllocation_{NullTextWriter}</text>
+        </name>
+      </place>
+      <place id="pre_AssemblyLoader/ResolutionAttemptedApplicationAssembliesSuccess_{System.Threading}">
+        <name>
+          <text>pre_AssemblyLoader/ResolutionAttemptedApplicationAssembliesSuccess_{System.Threading}</text>
+        </name>
+      </place>
+      <place id="pre_GC/RestartEEStop">
+        <name>
+          <text>pre_GC/RestartEEStop</text>
+        </name>
+      </place>
+      <place id="pre_GC/SampledObjectAllocation_{System.Char[]}">
+        <name>
+          <text>pre_GC/SampledObjectAllocation_{System.Char[]}</text>
+        </name>
+      </place>
+      <place id="pre_GC/SampledObjectAllocation_{NullTextWriter}">
+        <name>
+          <text>pre_GC/SampledObjectAllocation_{NullTextWriter}</text>
+        </name>
+      </place>
+      <place id="pre_Loader/ModuleLoad_{System.Text.Encoding.Extensions}">
+        <name>
+          <text>pre_Loader/ModuleLoad_{System.Text.Encoding.Extensions}</text>
+        </name>
+      </place>
+      <place id="pre_Loader/DomainModuleLoad_{C:\Program Files\dotnet\shared\Microsoft.NETCore.App\6.0.15\System.Text.Encoding.Extensions.dll}">
+        <name>
+          <text>pre_Loader/DomainModuleLoad_{C:\Program Files\dotnet\shared\Microsoft.NETCore.App\6.0.15\System.Text.Encoding.Extensions.dll}</text>
+        </name>
+      </place>
+      <place id="intplace_Loader/ModuleLoad_{System.Runtime.InteropServices}">
+        <name>
+          <text>intplace_Loader/ModuleLoad_{System.Runtime.InteropServices}</text>
+        </name>
+      </place>
+      <place id="intplace_AssemblyLoader/Start_{System.Runtime.InteropServices}">
+        <name>
+          <text>intplace_AssemblyLoader/Start_{System.Runtime.InteropServices}</text>
+        </name>
+      </place>
+      <place id="splace_in_GC/SampledObjectAllocation_{System.Char[]}_0">
+        <name>
+          <text>splace_in_GC/SampledObjectAllocation_{System.Char[]}_0</text>
+        </name>
+      </place>
+      <place id="pre_GC/SampledObjectAllocation_{OneElementAsyncLocalValueMap}">
+        <name>
+          <text>pre_GC/SampledObjectAllocation_{OneElementAsyncLocalValueMap}</text>
+        </name>
+      </place>
+      <place id="splace_in_GC/SuspendEEStart_{OTHER}_GC/SampledObjectAllocation_{System.String}_0">
+        <name>
+          <text>splace_in_GC/SuspendEEStart_{OTHER}_GC/SampledObjectAllocation_{System.String}_0</text>
+        </name>
+      </place>
+      <place id="splace_in_GC/SampledObjectAllocation_{System.Text.DecoderReplacementFallback}_GC/RestartEEStop_0">
+        <name>
+          <text>splace_in_GC/SampledObjectAllocation_{System.Text.DecoderReplacementFallback}_GC/RestartEEStop_0</text>
+        </name>
+      </place>
+      <place id="pre_GC/SampledObjectAllocation_{System.Threading.ExecutionContext}">
+        <name>
+          <text>pre_GC/SampledObjectAllocation_{System.Threading.ExecutionContext}</text>
+        </name>
+      </place>
+      <place id="intplace_Loader/DomainModuleLoad_{C:\Program Files\dotnet\shared\Microsoft.NETCore.App\6.0.15\System.Runtime.InteropServices.dll}">
+        <name>
+          <text>intplace_Loader/DomainModuleLoad_{C:\Program Files\dotnet\shared\Microsoft.NETCore.App\6.0.15\System.Runtime.InteropServices.dll}</text>
+        </name>
+      </place>
+      <place id="pre_AssemblyLoader/Stop_{System.Runtime.InteropServices}">
+        <name>
+          <text>pre_AssemblyLoader/Stop_{System.Runtime.InteropServices}</text>
+        </name>
+      </place>
+      <place id="pre_AssemblyLoader/ResolutionAttemptedFindInLoadContextAssemblyNotFound_{System.Threading}">
+        <name>
+          <text>pre_AssemblyLoader/ResolutionAttemptedFindInLoadContextAssemblyNotFound_{System.Threading}</text>
+        </name>
+      </place>
+      <place id="pre_Loader/DomainModuleLoad_{C:\Program Files\dotnet\shared\Microsoft.NETCore.App\6.0.15\System.Runtime.InteropServices.dll}">
+        <name>
+          <text>pre_Loader/DomainModuleLoad_{C:\Program Files\dotnet\shared\Microsoft.NETCore.App\6.0.15\System.Runtime.InteropServices.dll}</text>
+        </name>
+      </place>
+      <place id="intplace_GC/SampledObjectAllocation_{WindowsConsoleStream}">
+        <name>
+          <text>intplace_GC/SampledObjectAllocation_{WindowsConsoleStream}</text>
+        </name>
+      </place>
+      <place id="intplace_GC/SuspendEEStop">
+        <name>
+          <text>intplace_GC/SuspendEEStop</text>
+        </name>
+      </place>
+      <place id="splace_in_GC/SuspendEEStart_{OTHER}_GC/SampledObjectAllocation_{NullTextWriter}_7">
+        <name>
+          <text>splace_in_GC/SuspendEEStart_{OTHER}_GC/SampledObjectAllocation_{NullTextWriter}_7</text>
+        </name>
+      </place>
+      <place id="intplace_GC/SampledObjectAllocation_{System.SByte[]}">
+        <name>
+          <text>intplace_GC/SampledObjectAllocation_{System.SByte[]}</text>
+        </name>
+      </place>
+      <place id="intplace_AssemblyLoader/Stop_{System.Private.CoreLib}">
+        <name>
+          <text>intplace_AssemblyLoader/Stop_{System.Private.CoreLib}</text>
+        </name>
+      </place>
+      <place id="pre_GC/SampledObjectAllocation_{System.Threading.Tasks.Task`1[System.Threading.Tasks.VoidTaskResult]}">
+        <name>
+          <text>pre_GC/SampledObjectAllocation_{System.Threading.Tasks.Task`1[System.Threading.Tasks.VoidTaskResult]}</text>
+        </name>
+      </place>
+      <place id="splace_in_GC/SampledObjectAllocation_{System.String}_AssemblyLoader/Stop_{System.Private.CoreLib}_4">
+        <name>
+          <text>splace_in_GC/SampledObjectAllocation_{System.String}_AssemblyLoader/Stop_{System.Private.CoreLib}_4</text>
+        </name>
+      </place>
+      <place id="splace_in_GC/SuspendEEStart_{OTHER}_GC/SampledObjectAllocation_{SyncTextWriter}_9">
+        <name>
+          <text>splace_in_GC/SuspendEEStart_{OTHER}_GC/SampledObjectAllocation_{SyncTextWriter}_9</text>
+        </name>
+      </place>
+      <place id="pre_AssemblyLoader/KnownPathProbed_{C:\Program Files\dotnet\shared\Microsoft.NETCore.App\6.0.15\System.Runtime.InteropServices.dll}">
+        <name>
+          <text>pre_AssemblyLoader/KnownPathProbed_{C:\Program Files\dotnet\shared\Microsoft.NETCore.App\6.0.15\System.Runtime.InteropServices.dll}</text>
+        </name>
+      </place>
+      <place id="pre_Loader/AssemblyLoad_{System.Runtime.InteropServices}">
+        <name>
+          <text>pre_Loader/AssemblyLoad_{System.Runtime.InteropServices}</text>
+        </name>
+      </place>
+      <place id="pre_GC/SampledObjectAllocation_{System.Threading.ContextCallback}">
+        <name>
+          <text>pre_GC/SampledObjectAllocation_{System.Threading.ContextCallback}</text>
+        </name>
+      </place>
+      <place id="splace_in_GC/SampledObjectAllocation_{System.Byte[]}_GC/RestartEEStop_0">
+        <name>
+          <text>splace_in_GC/SampledObjectAllocation_{System.Byte[]}_GC/RestartEEStop_0</text>
+        </name>
+      </place>
+      <place id="pre_AssemblyLoader/ResolutionAttemptedFindInLoadContextAssemblyNotFound_{System.Runtime.InteropServices}">
+        <name>
+          <text>pre_AssemblyLoader/ResolutionAttemptedFindInLoadContextAssemblyNotFound_{System.Runtime.InteropServices}</text>
+        </name>
+      </place>
+      <transition id="GC/SampledObjectAllocation_{System.Text.OSEncoder}">
+        <name>
+          <text>GC/SampledObjectAllocation_{System.Text.OSEncoder}</text>
+        </name>
+      </transition>
+      <transition id="hid_31">
+        <name>
+          <text>hid_31</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="4771be33-3318-46c9-998c-836a09b6dfe5"/>
+      </transition>
+      <transition id="hid_154">
+        <name>
+          <text>hid_154</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="bb5878dd-a094-40f3-ac53-707a6451edc2"/>
+      </transition>
+      <transition id="hid_166">
+        <name>
+          <text>hid_166</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="30e27bf1-94a6-426c-8152-c3fe317b0f7a"/>
+      </transition>
+      <transition id="GC/SuspendEEStart_{OTHER}">
+        <name>
+          <text>GC/SuspendEEStart_{OTHER}</text>
+        </name>
+      </transition>
+      <transition id="hid_18">
+        <name>
+          <text>hid_18</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="d53a4872-63b5-49d1-8c6f-4e78f63bcd7d"/>
+      </transition>
+      <transition id="hid_148">
+        <name>
+          <text>hid_148</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="7b27c58f-b28a-45cd-8c79-0a1f67923004"/>
+      </transition>
+      <transition id="hid_138">
+        <name>
+          <text>hid_138</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="d92f56cf-1957-46ab-ba2e-1e1a287b4d58"/>
+      </transition>
+      <transition id="Loader/ModuleLoad_{System.Threading}">
+        <name>
+          <text>Loader/ModuleLoad_{System.Threading}</text>
+        </name>
+      </transition>
+      <transition id="hid_34">
+        <name>
+          <text>hid_34</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="775c1ebe-3e2a-4a2c-b30b-dc309b8e6e86"/>
+      </transition>
+      <transition id="hid_127">
+        <name>
+          <text>hid_127</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="5d86fa5d-1172-4bdf-9a00-ac1d99ac1beb"/>
+      </transition>
+      <transition id="hid_145">
+        <name>
+          <text>hid_145</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="d71aa33e-f871-42bd-90f7-5b624ea2221e"/>
+      </transition>
+      <transition id="GC/SampledObjectAllocation_{System.String}">
+        <name>
+          <text>GC/SampledObjectAllocation_{System.String}</text>
+        </name>
+      </transition>
+      <transition id="GC/SampledObjectAllocation_{System.Object[]}">
+        <name>
+          <text>GC/SampledObjectAllocation_{System.Object[]}</text>
+        </name>
+      </transition>
+      <transition id="Loader/AssemblyLoad_{System.Runtime.InteropServices}">
+        <name>
+          <text>Loader/AssemblyLoad_{System.Runtime.InteropServices}</text>
+        </name>
+      </transition>
+      <transition id="hid_158">
+        <name>
+          <text>hid_158</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="e4e9d39e-590d-40f0-8c92-d378dd7feebc"/>
+      </transition>
+      <transition id="Loader/ModuleLoad_{System.Text.Encoding.Extensions}">
+        <name>
+          <text>Loader/ModuleLoad_{System.Text.Encoding.Extensions}</text>
+        </name>
+      </transition>
+      <transition id="hid_5">
+        <name>
+          <text>hid_5</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="b3ced9aa-4101-478f-b9df-724acd6b8444"/>
+      </transition>
+      <transition id="hid_15">
+        <name>
+          <text>hid_15</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="532b532f-9e1c-4cd1-802c-660564683780"/>
+      </transition>
+      <transition id="hid_133">
+        <name>
+          <text>hid_133</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="430c4b8b-6ead-4d9e-a21d-fce37d3874c8"/>
+      </transition>
+      <transition id="hid_153">
+        <name>
+          <text>hid_153</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="456216b9-eb02-43ac-a5e6-c096187d2197"/>
+      </transition>
+      <transition id="hid_129">
+        <name>
+          <text>hid_129</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="9b05cdcb-a98a-4896-96d1-b973f38663f5"/>
+      </transition>
+      <transition id="GC/SampledObjectAllocation_{System.SByte[]}">
+        <name>
+          <text>GC/SampledObjectAllocation_{System.SByte[]}</text>
+        </name>
+      </transition>
+      <transition id="AssemblyLoader/Start_{System.Text.Encoding.Extensions}">
+        <name>
+          <text>AssemblyLoader/Start_{System.Text.Encoding.Extensions}</text>
+        </name>
+      </transition>
+      <transition id="GC/SampledObjectAllocation_{System.Char[]}">
+        <name>
+          <text>GC/SampledObjectAllocation_{System.Char[]}</text>
+        </name>
+      </transition>
+      <transition id="hid_49">
+        <name>
+          <text>hid_49</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="3f0f7ed2-7233-489b-bf85-7d2635a3a4e0"/>
+      </transition>
+      <transition id="hid_98">
+        <name>
+          <text>hid_98</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="de8e22af-c9ee-4d90-8879-390ae7e1a570"/>
+      </transition>
+      <transition id="hid_101">
+        <name>
+          <text>hid_101</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="6424a9b9-501a-4a21-a9df-4d43240b5142"/>
+      </transition>
+      <transition id="hid_109">
+        <name>
+          <text>hid_109</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="11f1c4b8-e87c-4e00-8f4f-89a476a0cb0e"/>
+      </transition>
+      <transition id="hid_121">
+        <name>
+          <text>hid_121</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="5690d681-a0b8-4dcf-bfb7-ea8bf9f7a1ce"/>
+      </transition>
+      <transition id="GC/SampledObjectAllocation_{System.Text.DecoderReplacementFallback}">
+        <name>
+          <text>GC/SampledObjectAllocation_{System.Text.DecoderReplacementFallback}</text>
+        </name>
+      </transition>
+      <transition id="GC/SampledObjectAllocation_{System.IO.StreamWriter}">
+        <name>
+          <text>GC/SampledObjectAllocation_{System.IO.StreamWriter}</text>
+        </name>
+      </transition>
+      <transition id="hid_168">
+        <name>
+          <text>hid_168</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="a83007fd-fd2b-4d45-a2e0-5aae5d296380"/>
+      </transition>
+      <transition id="hid_174">
+        <name>
+          <text>hid_174</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="05e2d3e1-885a-48ed-8ba1-03e2d567a952"/>
+      </transition>
+      <transition id="hid_157">
+        <name>
+          <text>hid_157</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="2dffbfa0-73e8-4889-b0b2-5a9da5c396ee"/>
+      </transition>
+      <transition id="GC/RestartEEStop">
+        <name>
+          <text>GC/RestartEEStop</text>
+        </name>
+      </transition>
+      <transition id="GC/SampledObjectAllocation_{System.Byte[]}">
+        <name>
+          <text>GC/SampledObjectAllocation_{System.Byte[]}</text>
+        </name>
+      </transition>
+      <transition id="hid_30">
+        <name>
+          <text>hid_30</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="f503a974-0e0c-4f8a-9250-66cc389b3173"/>
+      </transition>
+      <transition id="GC/SampledObjectAllocation_{System.Object}">
+        <name>
+          <text>GC/SampledObjectAllocation_{System.Object}</text>
+        </name>
+      </transition>
+      <transition id="hid_144">
+        <name>
+          <text>hid_144</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="2d0a958e-c404-4584-873b-c388b1b01b47"/>
+      </transition>
+      <transition id="GC/SampledObjectAllocation_{&lt;&gt;c}">
+        <name>
+          <text>GC/SampledObjectAllocation_{&lt;&gt;c}</text>
+        </name>
+      </transition>
+      <transition id="hid_33">
+        <name>
+          <text>hid_33</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="d379b501-f865-417c-886e-00cff3ae4d7b"/>
+      </transition>
+      <transition id="hid_96">
+        <name>
+          <text>hid_96</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="0f4355de-9380-4a73-b0b1-b10f6630b868"/>
+      </transition>
+      <transition id="hid_132">
+        <name>
+          <text>hid_132</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="1a58ad7b-e535-41a8-b263-a45c715eb7c5"/>
+      </transition>
+      <transition id="hid_136">
+        <name>
+          <text>hid_136</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="166e6b76-8210-4479-8202-dae13339ddd6"/>
+      </transition>
+      <transition id="hid_177">
+        <name>
+          <text>hid_177</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="a97fcc3d-57ff-4eb0-8191-482de6a6a25b"/>
+      </transition>
+      <transition id="hid_169">
+        <name>
+          <text>hid_169</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="ce3f5501-f29b-48a9-aa53-cd4bc00f15a5"/>
+      </transition>
+      <transition id="AssemblyLoader/ResolutionAttemptedFindInLoadContextAssemblyNotFound_{System.Text.Encoding.Extensions}">
+        <name>
+          <text>AssemblyLoader/ResolutionAttemptedFindInLoadContextAssemblyNotFound_{System.Text.Encoding.Extensions}</text>
+        </name>
+      </transition>
+      <transition id="GC/SampledObjectAllocation_{System.Threading.ExecutionContext}">
+        <name>
+          <text>GC/SampledObjectAllocation_{System.Threading.ExecutionContext}</text>
+        </name>
+      </transition>
+      <transition id="AssemblyLoader/Stop_{System.Text.Encoding.Extensions}">
+        <name>
+          <text>AssemblyLoader/Stop_{System.Text.Encoding.Extensions}</text>
+        </name>
+      </transition>
+      <transition id="hid_152">
+        <name>
+          <text>hid_152</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="0442055b-03c7-495b-837a-788687917478"/>
+      </transition>
+      <transition id="hid_181">
+        <name>
+          <text>hid_181</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="37b2a235-799e-4032-a34f-e547c3b09024"/>
+      </transition>
+      <transition id="GC/SampledObjectAllocation_{SyncTextWriter}">
+        <name>
+          <text>GC/SampledObjectAllocation_{SyncTextWriter}</text>
+        </name>
+      </transition>
+      <transition id="hid_32">
+        <name>
+          <text>hid_32</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="9b558500-8af6-4e48-829a-0fa456243a34"/>
+      </transition>
+      <transition id="hid_75">
+        <name>
+          <text>hid_75</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="d8d1d309-1c28-4e2b-adc9-5b118147a320"/>
+      </transition>
+      <transition id="hid_91">
+        <name>
+          <text>hid_91</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="3c9b5fb1-51ee-4787-87b1-f7203806b9ad"/>
+      </transition>
+      <transition id="hid_128">
+        <name>
+          <text>hid_128</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="f266274f-a532-4fa7-ad4d-ab2ede5ecd80"/>
+      </transition>
+      <transition id="hid_156">
+        <name>
+          <text>hid_156</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="805d1cf7-1d75-425c-84db-cb592678bf83"/>
+      </transition>
+      <transition id="Loader/DomainModuleLoad_{C:\Program Files\dotnet\shared\Microsoft.NETCore.App\6.0.15\System.Threading.dll}">
+        <name>
+          <text>Loader/DomainModuleLoad_{C:\Program Files\dotnet\shared\Microsoft.NETCore.App\6.0.15\System.Threading.dll}</text>
+        </name>
+      </transition>
+      <transition id="AssemblyLoader/Start_{System.Threading}">
+        <name>
+          <text>AssemblyLoader/Start_{System.Threading}</text>
+        </name>
+      </transition>
+      <transition id="GC/SampledObjectAllocation_{UTF8EncodingSealed}">
+        <name>
+          <text>GC/SampledObjectAllocation_{UTF8EncodingSealed}</text>
+        </name>
+      </transition>
+      <transition id="hid_147">
+        <name>
+          <text>hid_147</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="1be718bd-b9e1-45f3-8c77-cd90e693215a"/>
+      </transition>
+      <transition id="hid_120">
+        <name>
+          <text>hid_120</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="6faf8a8c-26c7-4af4-8225-a71800561bbc"/>
+      </transition>
+      <transition id="GC/SampledObjectAllocation_{System.Threading.Tasks.Task`1[System.Threading.Tasks.VoidTaskResult]}">
+        <name>
+          <text>GC/SampledObjectAllocation_{System.Threading.Tasks.Task`1[System.Threading.Tasks.VoidTaskResult]}</text>
+        </name>
+      </transition>
+      <transition id="hid_25">
+        <name>
+          <text>hid_25</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="0437a334-5166-4b88-8f60-493cc71a333d"/>
+      </transition>
+      <transition id="AssemblyLoader/KnownPathProbed_{C:\Program Files\dotnet\shared\Microsoft.NETCore.App\6.0.15\System.Text.Encoding.Extensions.dll}">
+        <name>
+          <text>AssemblyLoader/KnownPathProbed_{C:\Program Files\dotnet\shared\Microsoft.NETCore.App\6.0.15\System.Text.Encoding.Extensions.dll}</text>
+        </name>
+      </transition>
+      <transition id="hid_151">
+        <name>
+          <text>hid_151</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="20b3910e-4eca-4a81-afb0-a983a519f8de"/>
+      </transition>
+      <transition id="hid_104">
+        <name>
+          <text>hid_104</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="e532f556-89c2-46c3-a6de-80eca46c7ef1"/>
+      </transition>
+      <transition id="AssemblyLoader/ResolutionAttemptedFindInLoadContextAssemblyNotFound_{System.Runtime.InteropServices}">
+        <name>
+          <text>AssemblyLoader/ResolutionAttemptedFindInLoadContextAssemblyNotFound_{System.Runtime.InteropServices}</text>
+        </name>
+      </transition>
+      <transition id="hid_106">
+        <name>
+          <text>hid_106</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="57783539-c712-416b-a214-a20446505d97"/>
+      </transition>
+      <transition id="GC/SuspendEEStop">
+        <name>
+          <text>GC/SuspendEEStop</text>
+        </name>
+      </transition>
+      <transition id="AssemblyLoader/Start_{System.Runtime.InteropServices}">
+        <name>
+          <text>AssemblyLoader/Start_{System.Runtime.InteropServices}</text>
+        </name>
+      </transition>
+      <transition id="GC/RestartEEStart">
+        <name>
+          <text>GC/RestartEEStart</text>
+        </name>
+      </transition>
+      <transition id="hid_141">
+        <name>
+          <text>hid_141</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="cfafad7c-8af1-4eda-8ecf-0cb336f91558"/>
+      </transition>
+      <transition id="hid_162">
+        <name>
+          <text>hid_162</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="0769729b-f6dc-4d45-98ef-91fed29ed22a"/>
+      </transition>
+      <transition id="hid_167">
+        <name>
+          <text>hid_167</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="72e802d8-05a8-4b3f-8752-5616eb839ace"/>
+      </transition>
+      <transition id="hid_173">
+        <name>
+          <text>hid_173</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="6c4416f1-ca55-4882-bc05-93d9b05a4267"/>
+      </transition>
+      <transition id="AssemblyLoader/Stop_{System.Threading}">
+        <name>
+          <text>AssemblyLoader/Stop_{System.Threading}</text>
+        </name>
+      </transition>
+      <transition id="GC/SampledObjectAllocation_{NullStream}">
+        <name>
+          <text>GC/SampledObjectAllocation_{NullStream}</text>
+        </name>
+      </transition>
+      <transition id="AssemblyLoader/ResolutionAttemptedFindInLoadContextAssemblyNotFound_{System.Threading}">
+        <name>
+          <text>AssemblyLoader/ResolutionAttemptedFindInLoadContextAssemblyNotFound_{System.Threading}</text>
+        </name>
+      </transition>
+      <transition id="AssemblyLoader/ResolutionAttemptedApplicationAssembliesSuccess_{System.Runtime.InteropServices}">
+        <name>
+          <text>AssemblyLoader/ResolutionAttemptedApplicationAssembliesSuccess_{System.Runtime.InteropServices}</text>
+        </name>
+      </transition>
+      <transition id="hid_139">
+        <name>
+          <text>hid_139</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="2b7f7dd7-02fa-4266-88ff-66f3c78b8de8"/>
+      </transition>
+      <transition id="hid_146">
+        <name>
+          <text>hid_146</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="6322ab91-867b-4e1e-8cd9-9f4ac5ae880c"/>
+      </transition>
+      <transition id="GC/SetGCHandle_{STRONG}">
+        <name>
+          <text>GC/SetGCHandle_{STRONG}</text>
+        </name>
+      </transition>
+      <transition id="hid_89">
+        <name>
+          <text>hid_89</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="118ad3b7-bf13-4dee-9c24-814c0bb02ab3"/>
+      </transition>
+      <transition id="hid_97">
+        <name>
+          <text>hid_97</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="8316ffd4-e366-497a-a433-281657f793e2"/>
+      </transition>
+      <transition id="hid_108">
+        <name>
+          <text>hid_108</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="1190cee0-9ade-41f6-9412-47999a6ea3ae"/>
+      </transition>
+      <transition id="GC/SampledObjectAllocation_{ActivityInfo}">
+        <name>
+          <text>GC/SampledObjectAllocation_{ActivityInfo}</text>
+        </name>
+      </transition>
+      <transition id="Loader/AssemblyLoad_{System.Text.Encoding.Extensions}">
+        <name>
+          <text>Loader/AssemblyLoad_{System.Text.Encoding.Extensions}</text>
+        </name>
+      </transition>
+      <transition id="hid_35">
+        <name>
+          <text>hid_35</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="6c3c196d-2607-4c09-8df1-ebbd6e8033df"/>
+      </transition>
+      <transition id="GC/SampledObjectAllocation_{System.Threading.Tasks.TaskFactory}">
+        <name>
+          <text>GC/SampledObjectAllocation_{System.Threading.Tasks.TaskFactory}</text>
+        </name>
+      </transition>
+      <transition id="hid_48">
+        <name>
+          <text>hid_48</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="f84093ac-b4cb-4c2f-a6d8-e0eaef5356ec"/>
+      </transition>
+      <transition id="hid_99">
+        <name>
+          <text>hid_99</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="4fc71536-2450-44cf-82a4-3e37787e83d7"/>
+      </transition>
+      <transition id="hid_119">
+        <name>
+          <text>hid_119</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="fd33a1f9-9687-4f5b-8c30-e516887337cb"/>
+      </transition>
+      <transition id="Loader/ModuleLoad_{System.Runtime.InteropServices}">
+        <name>
+          <text>Loader/ModuleLoad_{System.Runtime.InteropServices}</text>
+        </name>
+      </transition>
+      <transition id="AssemblyLoader/Stop_{System.Runtime.InteropServices}">
+        <name>
+          <text>AssemblyLoader/Stop_{System.Runtime.InteropServices}</text>
+        </name>
+      </transition>
+      <transition id="AssemblyLoader/ResolutionAttemptedApplicationAssembliesSuccess_{System.Text.Encoding.Extensions}">
+        <name>
+          <text>AssemblyLoader/ResolutionAttemptedApplicationAssembliesSuccess_{System.Text.Encoding.Extensions}</text>
+        </name>
+      </transition>
+      <transition id="hid_131">
+        <name>
+          <text>hid_131</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="56984291-52a8-4a38-97aa-9c09214e1307"/>
+      </transition>
+      <transition id="hid_135">
+        <name>
+          <text>hid_135</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="cc3fb70c-5b6a-4274-b3d5-108444a576c9"/>
+      </transition>
+      <transition id="hid_155">
+        <name>
+          <text>hid_155</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="caf2a4d6-da53-4a04-be3a-68c84c906256"/>
+      </transition>
+      <transition id="hid_180">
+        <name>
+          <text>hid_180</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="92b94e5d-fbbd-4832-84b2-62fb3a3797c5"/>
+      </transition>
+      <transition id="GC/SampledObjectAllocation_{System.Reflection.RuntimeAssembly}">
+        <name>
+          <text>GC/SampledObjectAllocation_{System.Reflection.RuntimeAssembly}</text>
+        </name>
+      </transition>
+      <transition id="AssemblyLoader/Start_{System.Private.CoreLib}">
+        <name>
+          <text>AssemblyLoader/Start_{System.Private.CoreLib}</text>
+        </name>
+      </transition>
+      <transition id="AssemblyLoader/ResolutionAttemptedApplicationAssembliesSuccess_{System.Threading}">
+        <name>
+          <text>AssemblyLoader/ResolutionAttemptedApplicationAssembliesSuccess_{System.Threading}</text>
+        </name>
+      </transition>
+      <transition id="hid_123">
+        <name>
+          <text>hid_123</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="21430701-6b67-4ef5-92ae-ac7a117e8f13"/>
+      </transition>
+      <transition id="hid_179">
+        <name>
+          <text>hid_179</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="77506ff4-27ed-4b74-a562-fc0b1aff72fd"/>
+      </transition>
+      <transition id="GC/SampledObjectAllocation_{NullTextWriter}">
+        <name>
+          <text>GC/SampledObjectAllocation_{NullTextWriter}</text>
+        </name>
+      </transition>
+      <transition id="hid_22">
+        <name>
+          <text>hid_22</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="80d56e88-e003-421b-a9b4-1965e1435dd9"/>
+      </transition>
+      <transition id="hid_26">
+        <name>
+          <text>hid_26</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="3ef6d867-6ed2-487c-aa3e-3fdf4eaf7c89"/>
+      </transition>
+      <transition id="hid_40">
+        <name>
+          <text>hid_40</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="920bc588-a50e-4b9c-b9ea-10f80905d796"/>
+      </transition>
+      <transition id="hid_105">
+        <name>
+          <text>hid_105</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="127ba6da-2035-4dde-9c27-09c2f91b338c"/>
+      </transition>
+      <transition id="hid_134">
+        <name>
+          <text>hid_134</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="2c50c43e-6769-4db2-9695-646afb52d168"/>
+      </transition>
+      <transition id="Loader/DomainModuleLoad_{C:\Program Files\dotnet\shared\Microsoft.NETCore.App\6.0.15\System.Runtime.InteropServices.dll}">
+        <name>
+          <text>Loader/DomainModuleLoad_{C:\Program Files\dotnet\shared\Microsoft.NETCore.App\6.0.15\System.Runtime.InteropServices.dll}</text>
+        </name>
+      </transition>
+      <transition id="GC/SampledObjectAllocation_{OneElementAsyncLocalValueMap}">
+        <name>
+          <text>GC/SampledObjectAllocation_{OneElementAsyncLocalValueMap}</text>
+        </name>
+      </transition>
+      <transition id="AssemblyLoader/KnownPathProbed_{C:\Program Files\dotnet\shared\Microsoft.NETCore.App\6.0.15\System.Runtime.InteropServices.dll}">
+        <name>
+          <text>AssemblyLoader/KnownPathProbed_{C:\Program Files\dotnet\shared\Microsoft.NETCore.App\6.0.15\System.Runtime.InteropServices.dll}</text>
+        </name>
+      </transition>
+      <transition id="hid_149">
+        <name>
+          <text>hid_149</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="3935ff4e-e1f2-4edd-99fb-95bad182fda2"/>
+      </transition>
+      <transition id="GC/SampledObjectAllocation_{System.Text.OSEncoding}">
+        <name>
+          <text>GC/SampledObjectAllocation_{System.Text.OSEncoding}</text>
+        </name>
+      </transition>
+      <transition id="hid_118">
+        <name>
+          <text>hid_118</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="b07a45ac-6d50-4ef5-ac52-802f4a181c10"/>
+      </transition>
+      <transition id="GC/SampledObjectAllocation_{System.Text.EncoderReplacementFallback}">
+        <name>
+          <text>GC/SampledObjectAllocation_{System.Text.EncoderReplacementFallback}</text>
+        </name>
+      </transition>
+      <transition id="AssemblyLoader/KnownPathProbed_{C:\Program Files\dotnet\shared\Microsoft.NETCore.App\6.0.15\System.Threading.dll}">
+        <name>
+          <text>AssemblyLoader/KnownPathProbed_{C:\Program Files\dotnet\shared\Microsoft.NETCore.App\6.0.15\System.Threading.dll}</text>
+        </name>
+      </transition>
+      <transition id="GC/SampledObjectAllocation_{System.Threading.ContextCallback}">
+        <name>
+          <text>GC/SampledObjectAllocation_{System.Threading.ContextCallback}</text>
+        </name>
+      </transition>
+      <transition id="Loader/AssemblyLoad_{System.Threading}">
+        <name>
+          <text>Loader/AssemblyLoad_{System.Threading}</text>
+        </name>
+      </transition>
+      <transition id="hid_27">
+        <name>
+          <text>hid_27</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="67490ef2-e292-401d-9911-84be40b27f5c"/>
+      </transition>
+      <transition id="hid_92">
+        <name>
+          <text>hid_92</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="1a8cdacb-91ed-44df-9c58-e9dd45712cf5"/>
+      </transition>
+      <transition id="hid_115">
+        <name>
+          <text>hid_115</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="69fdcf8b-6830-438b-90e3-bb15d4744b33"/>
+      </transition>
+      <transition id="hid_126">
+        <name>
+          <text>hid_126</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="3d498e77-0380-4a77-bd44-e82a0772e307"/>
+      </transition>
+      <transition id="AssemblyLoader/Stop_{System.Private.CoreLib}">
+        <name>
+          <text>AssemblyLoader/Stop_{System.Private.CoreLib}</text>
+        </name>
+      </transition>
+      <transition id="GC/SampledObjectAllocation_{WindowsConsoleStream}">
+        <name>
+          <text>GC/SampledObjectAllocation_{WindowsConsoleStream}</text>
+        </name>
+      </transition>
+      <transition id="Loader/DomainModuleLoad_{C:\Program Files\dotnet\shared\Microsoft.NETCore.App\6.0.15\System.Text.Encoding.Extensions.dll}">
+        <name>
+          <text>Loader/DomainModuleLoad_{C:\Program Files\dotnet\shared\Microsoft.NETCore.App\6.0.15\System.Text.Encoding.Extensions.dll}</text>
+        </name>
+      </transition>
+      <transition id="hid_122">
+        <name>
+          <text>hid_122</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="ead75345-64f5-414d-8e01-f8ac56444558"/>
+      </transition>
+      <arc id="1625736771616" source="intplace_GC/RestartEEStop" target="hid_152"/>
+      <arc id="1625735555104" source="hid_162" target="pre_GC/SampledObjectAllocation_{System.Threading.ContextCallback}"/>
+      <arc id="1625736663104" source="intplace_GC/SampledObjectAllocation_{System.SByte[]}" target="hid_105"/>
+      <arc id="1625736745024" source="intplace_AssemblyLoader/Stop_{System.Runtime.InteropServices}" target="hid_138"/>
+      <arc id="1625735532608" source="intplace_GC/SampledObjectAllocation_{System.Threading.Tasks.TaskFactory}" target="hid_179"/>
+      <arc id="1625735553088" source="Loader/DomainModuleLoad_{C:\Program Files\dotnet\shared\Microsoft.NETCore.App\6.0.15\System.Text.Encoding.Extensions.dll}" target="splace_in_GC/SuspendEEStart_{OTHER}_Loader/DomainModuleLoad_{C:\Program Files\dotnet\shared\Microsoft.NETCore.App\6.0.15\System.Text.Encoding.Extensions.dll}_16"/>
+      <arc id="1625735569472" source="hid_156" target="pre_GC/SampledObjectAllocation_{System.Object}"/>
+      <arc id="1625723037776" source="splace_in_GC/SampledObjectAllocation_{System.String}_AssemblyLoader/Stop_{System.Private.CoreLib}_4" target="hid_5"/>
+      <arc id="1625722837072" source="splace_in_GC/SuspendEEStart_{OTHER}_GC/SampledObjectAllocation_{System.String}_0" target="hid_33"/>
+      <arc id="1625736722512" source="AssemblyLoader/Stop_{System.Text.Encoding.Extensions}" target="intplace_AssemblyLoader/Stop_{System.Text.Encoding.Extensions}"/>
+      <arc id="1625736747088" source="Loader/AssemblyLoad_{System.Text.Encoding.Extensions}" target="pre_Loader/ModuleLoad_{System.Text.Encoding.Extensions}"/>
+      <arc id="1625736789728" source="intplace_GC/SampledObjectAllocation_{System.Char[]}" target="hid_169"/>
+      <arc id="1625735555200" source="hid_97" target="pre_GC/SuspendEEStop"/>
+      <arc id="1625735571584" source="AssemblyLoader/ResolutionAttemptedApplicationAssembliesSuccess_{System.Text.Encoding.Extensions}" target="pre_GC/SampledObjectAllocation_{System.String}"/>
+      <arc id="1625736695968" source="intplace_GC/SuspendEEStop" target="hid_118"/>
+      <arc id="1625736786080" source="intplace_GC/RestartEEStop" target="hid_158"/>
+      <arc id="1625722771632" source="pre_GC/SampledObjectAllocation_{OneElementAsyncLocalValueMap}" target="GC/SampledObjectAllocation_{OneElementAsyncLocalValueMap}"/>
+      <arc id="1625736747184" source="AssemblyLoader/KnownPathProbed_{C:\Program Files\dotnet\shared\Microsoft.NETCore.App\6.0.15\System.Runtime.InteropServices.dll}" target="pre_AssemblyLoader/ResolutionAttemptedFindInLoadContextAssemblyNotFound_{System.Runtime.InteropServices}"/>
+      <arc id="1625736771760" source="hid_152" target="splace_in_GC/SampledObjectAllocation_{System.SByte[]}_1"/>
+      <arc id="1625735554336" source="GC/SampledObjectAllocation_{System.Text.OSEncoding}" target="pre_GC/SampledObjectAllocation_{System.SByte[]}"/>
+      <arc id="1625736789344" source="intplace_GC/SampledObjectAllocation_{System.Char[]}" target="hid_168"/>
+      <arc id="1625736614096" source="pre_Loader/ModuleLoad_{System.Text.Encoding.Extensions}" target="Loader/ModuleLoad_{System.Text.Encoding.Extensions}"/>
+      <arc id="1625722409168" source="pre_AssemblyLoader/KnownPathProbed_{C:\Program Files\dotnet\shared\Microsoft.NETCore.App\6.0.15\System.Threading.dll}" target="AssemblyLoader/KnownPathProbed_{C:\Program Files\dotnet\shared\Microsoft.NETCore.App\6.0.15\System.Threading.dll}"/>
+      <arc id="1625722472672" source="splace_in_GC/SuspendEEStop_GC/SampledObjectAllocation_{System.Threading.Tasks.TaskFactory}_0" target="hid_48"/>
+      <arc id="1625736616160" source="intplace_GC/SampledObjectAllocation_{System.String}" target="hid_89"/>
+      <arc id="1625736698080" source="AssemblyLoader/Start_{System.Threading}" target="pre_AssemblyLoader/KnownPathProbed_{C:\Program Files\dotnet\shared\Microsoft.NETCore.App\6.0.15\System.Threading.dll}"/>
+      <arc id="1625736722656" source="intplace_AssemblyLoader/Stop_{System.Text.Encoding.Extensions}" target="hid_133"/>
+      <arc id="1625735572256" source="GC/SampledObjectAllocation_{System.Text.OSEncoder}" target="pre_GC/SampledObjectAllocation_{System.Char[]}"/>
+      <arc id="1625736642816" source="intplace_GC/SampledObjectAllocation_{System.String}" target="hid_96"/>
+      <arc id="1625736720640" source="intplace_AssemblyLoader/Stop_{System.Private.CoreLib}" target="hid_128"/>
+      <arc id="1625735553280" source="hid_129" target="pre_GC/SampledObjectAllocation_{System.SByte[]}"/>
+      <arc id="1625735569664" source="hid_120" target="pre_GC/SuspendEEStop"/>
+      <arc id="1625735590144" source="intplace_GC/SampledObjectAllocation_{System.String}" target="hid_35"/>
+      <arc id="1625736587536" source="pre_GC/SampledObjectAllocation_{System.Threading.Tasks.Task`1[System.Threading.Tasks.VoidTaskResult]}" target="GC/SampledObjectAllocation_{System.Threading.Tasks.Task`1[System.Threading.Tasks.VoidTaskResult]}"/>
+      <arc id="1625736771856" source="hid_152" target="pre_GC/SampledObjectAllocation_{SyncTextWriter}"/>
+      <arc id="1625736786224" source="hid_158" target="splace_in_GC/SampledObjectAllocation_{System.SByte[]}_1"/>
+      <arc id="1625735553952" source="hid_119" target="pre_Loader/DomainModuleLoad_{C:\Program Files\dotnet\shared\Microsoft.NETCore.App\6.0.15\System.Runtime.InteropServices.dll}"/>
+      <arc id="1625722812736" source="hid_25" target="pre_GC/SuspendEEStart_{OTHER}"/>
+      <arc id="1625735555392" source="hid_123" target="pre_GC/SampledObjectAllocation_{System.Text.DecoderReplacementFallback}"/>
+      <arc id="1625736642912" source="hid_96" target="splace_in_GC/SuspendEEStart_{OTHER}_GC/SampledObjectAllocation_{System.String}_0"/>
+      <arc id="1625736663392" source="intplace_GC/SampledObjectAllocation_{System.SByte[]}" target="hid_106"/>
+      <arc id="1625736747376" source="Loader/AssemblyLoad_{System.Runtime.InteropServices}" target="intplace_Loader/AssemblyLoad_{System.Runtime.InteropServices}"/>
+      <arc id="1625735591008" source="intplace_GC/SampledObjectAllocation_{WindowsConsoleStream}" target="hid_33"/>
+      <arc id="1625722409360" source="pre_GC/SampledObjectAllocation_{System.Object[]}" target="GC/SampledObjectAllocation_{System.Object[]}"/>
+      <arc id="1625736614288" source="pre_Loader/AssemblyLoad_{System.Threading}" target="Loader/AssemblyLoad_{System.Threading}"/>
+      <arc id="1625736745360" source="GC/SampledObjectAllocation_{System.Object[]}" target="pre_GC/SetGCHandle_{STRONG}"/>
+      <arc id="1625736769936" source="GC/RestartEEStop" target="intplace_GC/RestartEEStop"/>
+      <arc id="1625722837408" source="hid_34" target="pre_GC/SuspendEEStart_{OTHER}"/>
+      <arc id="1625722472864" source="splace_in_GC/SuspendEEStop_GC/SampledObjectAllocation_{System.Object}_0" target="hid_48"/>
+      <arc id="1625736772000" source="intplace_GC/RestartEEStop" target="hid_153"/>
+      <arc id="1625735555488" source="hid_168" target="pre_GC/SampledObjectAllocation_{System.SByte[]}"/>
+      <arc id="1625735571872" source="hid_126" target="pre_GC/SampledObjectAllocation_{System.Object[]}"/>
+      <arc id="1625735553568" source="hid_148" target="pre_AssemblyLoader/KnownPathProbed_{C:\Program Files\dotnet\shared\Microsoft.NETCore.App\6.0.15\System.Text.Encoding.Extensions.dll}"/>
+      <arc id="1625736696256" source="intplace_GC/SuspendEEStop" target="hid_119"/>
+      <arc id="1625736769984" source="intplace_GC/RestartEEStop" target="hid_147"/>
+      <arc id="1625735532992" source="hid_180" target="splace_in_GC/SuspendEEStop_GC/SampledObjectAllocation_{System.Threading.Tasks.TaskFactory}_0"/>
+      <arc id="1625735553472" source="hid_101" target="pre_GC/SampledObjectAllocation_{System.String}"/>
+      <arc id="1625735569856" source="GC/SampledObjectAllocation_{SyncTextWriter}" target="pre_GC/SampledObjectAllocation_{System.SByte[]}"/>
+      <arc id="1625722386896" source="pre_AssemblyLoader/ResolutionAttemptedFindInLoadContextAssemblyNotFound_{System.Threading}" target="AssemblyLoader/ResolutionAttemptedFindInLoadContextAssemblyNotFound_{System.Threading}"/>
+      <arc id="1625722341840" source="pre_GC/SampledObjectAllocation_{SyncTextWriter}" target="GC/SampledObjectAllocation_{SyncTextWriter}"/>
+      <arc id="1625735556832" source="GC/SampledObjectAllocation_{System.IO.StreamWriter}" target="pre_GC/SuspendEEStart_{OTHER}"/>
+      <arc id="1625735571488" source="hid_181" target="pre_GC/SampledObjectAllocation_{NullTextWriter}"/>
+      <arc id="1625735590624" source="intplace_GC/SampledObjectAllocation_{System.Threading.ExecutionContext}" target="AssemblyLoader/Start_{System.Text.Encoding.Extensions}"/>
+      <arc id="1625722509824" source="hid_40" target="pre_GC/SampledObjectAllocation_{System.SByte[]}"/>
+      <arc id="1625736722944" source="intplace_AssemblyLoader/Stop_{System.Text.Encoding.Extensions}" target="hid_134"/>
+      <arc id="1625735571968" source="hid_149" target="pre_Loader/AssemblyLoad_{System.Runtime.InteropServices}"/>
+      <arc id="1625736720928" source="intplace_AssemblyLoader/Stop_{System.Private.CoreLib}" target="hid_129"/>
+      <arc id="1625736745504" source="AssemblyLoader/KnownPathProbed_{C:\Program Files\dotnet\shared\Microsoft.NETCore.App\6.0.15\System.Text.Encoding.Extensions.dll}" target="pre_AssemblyLoader/ResolutionAttemptedFindInLoadContextAssemblyNotFound_{System.Text.Encoding.Extensions}"/>
+      <arc id="1625735553184" source="hid_129" target="pre_GC/SuspendEEStart_{OTHER}"/>
+      <arc id="1625722812976" source="splace_in_GC/SuspendEEStart_{OTHER}_GC/SampledObjectAllocation_{NullTextWriter}_7" target="hid_25"/>
+      <arc id="1625722837552" source="splace_in_GC/SuspendEEStart_{OTHER}_GC/SampledObjectAllocation_{System.String}_0" target="hid_34"/>
+      <arc id="1625722473008" source="hid_49" target="pre_GC/SuspendEEStop"/>
+      <arc id="1625736645168" source="GC/SampledObjectAllocation_{WindowsConsoleStream}" target="intplace_GC/SampledObjectAllocation_{WindowsConsoleStream}"/>
+      <arc id="1625736772144" source="hid_153" target="splace_in_GC/SampledObjectAllocation_{System.SByte[]}_1"/>
+      <arc id="1625735556448" source="GC/SampledObjectAllocation_{System.Text.DecoderReplacementFallback}" target="pre_GC/SampledObjectAllocation_{System.SByte[]}"/>
+      <arc id="1625736614480" source="pre_Loader/ModuleLoad_{System.Threading}" target="Loader/ModuleLoad_{System.Threading}"/>
+      <arc id="1625722384976" source="pre_AssemblyLoader/KnownPathProbed_{C:\Program Files\dotnet\shared\Microsoft.NETCore.App\6.0.15\System.Runtime.InteropServices.dll}" target="AssemblyLoader/KnownPathProbed_{C:\Program Files\dotnet\shared\Microsoft.NETCore.App\6.0.15\System.Runtime.InteropServices.dll}"/>
+      <arc id="1625736585808" source="pre_GC/SampledObjectAllocation_{System.Threading.ContextCallback}" target="GC/SampledObjectAllocation_{System.Threading.ContextCallback}"/>
+      <arc id="1625736643152" source="GC/SampledObjectAllocation_{OneElementAsyncLocalValueMap}" target="pre_GC/SampledObjectAllocation_{System.Threading.ExecutionContext}"/>
+      <arc id="1625735533136" source="Loader/ModuleLoad_{System.Text.Encoding.Extensions}" target="pre_Loader/DomainModuleLoad_{C:\Program Files\dotnet\shared\Microsoft.NETCore.App\6.0.15\System.Text.Encoding.Extensions.dll}"/>
+      <arc id="1625735505568" source="intplace_GC/SampledObjectAllocation_{NullTextWriter}" target="hid_174"/>
+      <arc id="1625735571104" source="hid_128" target="pre_GC/SampledObjectAllocation_{System.Object}"/>
+      <arc id="1625736788576" source="intplace_GC/RestartEEStop" target="hid_166"/>
+      <arc id="1625735555680" source="GC/SampledObjectAllocation_{System.IO.StreamWriter}" target="pre_GC/SampledObjectAllocation_{System.SByte[]}"/>
+      <arc id="1625735572064" source="hid_145" target="pre_GC/RestartEEStart"/>
+      <arc id="1625735590240" source="intplace_GC/SampledObjectAllocation_{System.Threading.ExecutionContext}" target="AssemblyLoader/Stop_{System.Text.Encoding.Extensions}"/>
+      <arc id="1625735553664" source="hid_166" target="pre_Loader/AssemblyLoad_{System.Text.Encoding.Extensions}"/>
+      <arc id="1625735570048" source="Loader/DomainModuleLoad_{C:\Program Files\dotnet\shared\Microsoft.NETCore.App\6.0.15\System.Text.Encoding.Extensions.dll}" target="pre_GC/SampledObjectAllocation_{System.String}"/>
+      <arc id="1625735590528" source="intplace_GC/SampledObjectAllocation_{System.String}" target="GC/SampledObjectAllocation_{WindowsConsoleStream}"/>
+      <arc id="1625722411664" source="pre_AssemblyLoader/KnownPathProbed_{C:\Program Files\dotnet\shared\Microsoft.NETCore.App\6.0.15\System.Text.Encoding.Extensions.dll}" target="AssemblyLoader/KnownPathProbed_{C:\Program Files\dotnet\shared\Microsoft.NETCore.App\6.0.15\System.Text.Encoding.Extensions.dll}"/>
+      <arc id="1625722387088" source="pre_AssemblyLoader/ResolutionAttemptedApplicationAssembliesSuccess_{System.Threading}" target="AssemblyLoader/ResolutionAttemptedApplicationAssembliesSuccess_{System.Threading}"/>
+      <arc id="1625722342032" source="pre_GC/SampledObjectAllocation_{NullTextWriter}" target="GC/SampledObjectAllocation_{NullTextWriter}"/>
+      <arc id="1625736772240" source="hid_153" target="splace_in_GC/SampledObjectAllocation_{System.Byte[]}_GC/RestartEEStop_0"/>
+      <arc id="1625736721072" source="hid_129" target="splace_in_GC/SampledObjectAllocation_{System.String}_AssemblyLoader/Stop_{System.Private.CoreLib}_4"/>
+      <arc id="1625736745648" source="GC/SampledObjectAllocation_{System.Object}" target="intplace_GC/SampledObjectAllocation_{System.Object}"/>
+      <arc id="1625735533232" source="AssemblyLoader/ResolutionAttemptedFindInLoadContextAssemblyNotFound_{System.Runtime.InteropServices}" target="pre_AssemblyLoader/ResolutionAttemptedApplicationAssembliesSuccess_{System.Runtime.InteropServices}"/>
+      <arc id="1625722510016" source="splace_in_GC/SampledObjectAllocation_{System.SByte[]}_1" target="hid_40"/>
+      <arc id="1625722473152" source="splace_in_GC/SuspendEEStop_GC/SampledObjectAllocation_{System.Threading.Tasks.TaskFactory}_0" target="hid_49"/>
+      <arc id="1625736645312" source="intplace_GC/SampledObjectAllocation_{WindowsConsoleStream}" target="hid_101"/>
+      <arc id="1625735555776" source="AssemblyLoader/Start_{System.Private.CoreLib}" target="pre_GC/SampledObjectAllocation_{System.String}"/>
+      <arc id="1625735572160" source="hid_121" target="pre_Loader/DomainModuleLoad_{C:\Program Files\dotnet\shared\Microsoft.NETCore.App\6.0.15\System.Runtime.InteropServices.dll}"/>
+      <arc id="1625735570720" source="hid_127" target="pre_GC/SuspendEEStart_{OTHER}"/>
+      <arc id="1625722835680" source="hid_30" target="pre_GC/SuspendEEStart_{OTHER}"/>
+      <arc id="1625736745696" source="intplace_GC/SampledObjectAllocation_{System.Object}" target="hid_139"/>
+      <arc id="1625736770272" source="intplace_GC/RestartEEStop" target="hid_148"/>
+      <arc id="1625722837744" source="splace_in_GC/SuspendEEStart_{OTHER}_Loader/DomainModuleLoad_{C:\Program Files\dotnet\shared\Microsoft.NETCore.App\6.0.15\System.Text.Encoding.Extensions.dll}_16" target="hid_34"/>
+      <arc id="1625722446608" source="pre_GC/SampledObjectAllocation_{System.Text.EncoderReplacementFallback}" target="GC/SampledObjectAllocation_{System.Text.EncoderReplacementFallback}"/>
+      <arc id="1625736614672" source="pre_Loader/DomainModuleLoad_{C:\Program Files\dotnet\shared\Microsoft.NETCore.App\6.0.15\System.Threading.dll}" target="Loader/DomainModuleLoad_{C:\Program Files\dotnet\shared\Microsoft.NETCore.App\6.0.15\System.Threading.dll}"/>
+      <arc id="1625736643344" source="GC/SuspendEEStart_{OTHER}" target="intplace_GC/SuspendEEStart_{OTHER}"/>
+      <arc id="1625736696592" source="Loader/ModuleLoad_{System.Runtime.InteropServices}" target="intplace_Loader/ModuleLoad_{System.Runtime.InteropServices}"/>
+      <arc id="1625736616736" source="intplace_GC/SampledObjectAllocation_{System.String}" target="hid_91"/>
+      <arc id="1625736747808" source="intplace_Loader/AssemblyLoad_{System.Runtime.InteropServices}" target="hid_144"/>
+      <arc id="1625736772384" source="intplace_GC/RestartEEStop" target="hid_154"/>
+      <arc id="1625735554048" source="hid_169" target="pre_GC/SampledObjectAllocation_{System.Text.OSEncoder}"/>
+      <arc id="1625735570336" source="hid_162" target="pre_GC/SampledObjectAllocation_{System.Threading.Tasks.Task`1[System.Threading.Tasks.VoidTaskResult]}"/>
+      <arc id="1625735553856" source="hid_118" target="pre_GC/RestartEEStart"/>
+      <arc id="1625735570240" source="hid_155" target="pre_GC/SampledObjectAllocation_{System.Object[]}"/>
+      <arc id="1625735590720" source="intplace_GC/SampledObjectAllocation_{System.String}" target="GC/SampledObjectAllocation_{NullStream}"/>
+      <arc id="1625722387280" source="pre_GC/SetGCHandle_{STRONG}" target="GC/SetGCHandle_{STRONG}"/>
+      <arc id="1625736723280" source="AssemblyLoader/Start_{System.Runtime.InteropServices}" target="intplace_AssemblyLoader/Start_{System.Runtime.InteropServices}"/>
+      <arc id="1625735532896" source="intplace_GC/SampledObjectAllocation_{System.Threading.Tasks.TaskFactory}" target="hid_180"/>
+      <arc id="1625736745840" source="hid_139" target="splace_in_GC/SuspendEEStart_{OTHER}_13"/>
+      <arc id="1625735533424" source="GC/SampledObjectAllocation_{&lt;&gt;c}" target="intplace_GC/SampledObjectAllocation_{&lt;&gt;c}"/>
+      <arc id="1625722813312" source="hid_26" target="pre_GC/SuspendEEStart_{OTHER}"/>
+      <arc id="1625736788864" source="intplace_GC/RestartEEStop" target="hid_167"/>
+      <arc id="1625735555968" source="GC/SampledObjectAllocation_{UTF8EncodingSealed}" target="pre_GC/SampledObjectAllocation_{System.Text.EncoderReplacementFallback}"/>
+      <arc id="1625736643488" source="intplace_GC/SuspendEEStart_{OTHER}" target="hid_97"/>
+      <arc id="1625736663968" source="intplace_GC/SampledObjectAllocation_{System.SByte[]}" target="hid_108"/>
+      <arc id="1625722835872" source="splace_in_GC/SuspendEEStart_{OTHER}_13" target="hid_30"/>
+      <arc id="1625736696736" source="intplace_Loader/ModuleLoad_{System.Runtime.InteropServices}" target="hid_120"/>
+      <arc id="1625735555296" source="hid_132" target="pre_GC/SuspendEEStart_{OTHER}"/>
+      <arc id="1625736772528" source="hid_154" target="splace_in_GC/SampledObjectAllocation_{System.Char[]}_0"/>
+      <arc id="1625735506864" source="AssemblyLoader/ResolutionAttemptedFindInLoadContextAssemblyNotFound_{System.Text.Encoding.Extensions}" target="pre_AssemblyLoader/ResolutionAttemptedApplicationAssembliesSuccess_{System.Text.Encoding.Extensions}"/>
+      <arc id="1625735569952" source="AssemblyLoader/ResolutionAttemptedApplicationAssembliesSuccess_{System.Threading}" target="pre_GC/SampledObjectAllocation_{System.String}"/>
+      <arc id="1625722340304" source="pre_GC/RestartEEStop" target="GC/RestartEEStop"/>
+      <arc id="1625736614864" source="pre_AssemblyLoader/ResolutionAttemptedApplicationAssembliesSuccess_{System.Text.Encoding.Extensions}" target="AssemblyLoader/ResolutionAttemptedApplicationAssembliesSuccess_{System.Text.Encoding.Extensions}"/>
+      <arc id="1625736745936" source="hid_139" target="splace_in_GC/SampledObjectAllocation_{System.String}_GC/SampledObjectAllocation_{System.Object}_4"/>
+      <arc id="1625735573216" source="intplace_GC/RestartEEStop" target="GC/SampledObjectAllocation_{UTF8EncodingSealed}"/>
+      <arc id="1625736723424" source="intplace_AssemblyLoader/Start_{System.Runtime.InteropServices}" target="hid_135"/>
+      <arc id="1625736788960" source="hid_167" target="sink0"/>
+      <arc id="1625735556064" source="hid_131" target="pre_AssemblyLoader/KnownPathProbed_{C:\Program Files\dotnet\shared\Microsoft.NETCore.App\6.0.15\System.Text.Encoding.Extensions.dll}"/>
+      <arc id="1625735572448" source="intplace_GC/SampledObjectAllocation_{System.SByte[]}" target="GC/SampledObjectAllocation_{System.Text.OSEncoding}"/>
+      <arc id="1625722811392" source="hid_22" target="pre_GC/SuspendEEStart_{OTHER}"/>
+      <arc id="1625736664064" source="hid_108" target="splace_in_GC/SuspendEEStart_{OTHER}_GC/SampledObjectAllocation_{System.SByte[]}_9"/>
+      <arc id="1625736770560" source="intplace_GC/RestartEEStop" target="hid_149"/>
+      <arc id="1625735533568" source="intplace_GC/SampledObjectAllocation_{&lt;&gt;c}" target="hid_181"/>
+      <arc id="1625722813456" source="splace_in_GC/SuspendEEStart_{OTHER}_GC/SampledObjectAllocation_{NullTextWriter}_7" target="hid_26"/>
+      <arc id="1625722838032" source="pre_GC/SampledObjectAllocation_{System.Text.DecoderReplacementFallback}" target="GC/SampledObjectAllocation_{System.Text.DecoderReplacementFallback}"/>
+      <arc id="1625722387472" source="pre_GC/RestartEEStart" target="GC/RestartEEStart"/>
+      <arc id="1625735506960" source="GC/SampledObjectAllocation_{System.Threading.Tasks.Task`1[System.Threading.Tasks.VoidTaskResult]}" target="intplace_GC/SampledObjectAllocation_{System.Threading.Tasks.Task`1[System.Threading.Tasks.VoidTaskResult]}"/>
+      <arc id="1625722838080" source="hid_35" target="pre_GC/SampledObjectAllocation_{System.Text.DecoderReplacementFallback}"/>
+      <arc id="1625736617024" source="intplace_GC/SampledObjectAllocation_{System.String}" target="hid_92"/>
+      <arc id="1625736666176" source="intplace_GC/SampledObjectAllocation_{System.Threading.ExecutionContext}" target="hid_115"/>
+      <arc id="1625735556160" source="hid_151" target="pre_GC/SampledObjectAllocation_{NullTextWriter}"/>
+      <arc id="1625735572544" source="intplace_GC/SampledObjectAllocation_{System.Threading.ExecutionContext}" target="AssemblyLoader/Stop_{System.Threading}"/>
+      <arc id="1625735572832" source="intplace_GC/SampledObjectAllocation_{System.Threading.Tasks.Task`1[System.Threading.Tasks.VoidTaskResult]}" target="hid_49"/>
+      <arc id="1625722836064" source="hid_31" target="pre_GC/SuspendEEStart_{OTHER}"/>
+      <arc id="1625722340496" source="pre_GC/SampledObjectAllocation_{System.Char[]}" target="GC/SampledObjectAllocation_{System.Char[]}"/>
+      <arc id="1625736615056" source="pre_Loader/DomainModuleLoad_{C:\Program Files\dotnet\shared\Microsoft.NETCore.App\6.0.15\System.Text.Encoding.Extensions.dll}" target="Loader/DomainModuleLoad_{C:\Program Files\dotnet\shared\Microsoft.NETCore.App\6.0.15\System.Text.Encoding.Extensions.dll}"/>
+      <arc id="1625736772768" source="intplace_GC/RestartEEStop" target="hid_155"/>
+      <arc id="1625735507104" source="intplace_GC/SampledObjectAllocation_{System.Threading.Tasks.Task`1[System.Threading.Tasks.VoidTaskResult]}" target="hid_177"/>
+      <arc id="1625735556256" source="hid_179" target="pre_GC/SampledObjectAllocation_{System.Threading.Tasks.Task`1[System.Threading.Tasks.VoidTaskResult]}"/>
+      <arc id="1625735572640" source="intplace_GC/SampledObjectAllocation_{System.String}" target="GC/SampledObjectAllocation_{UTF8EncodingSealed}"/>
+      <arc id="1625736643776" source="intplace_GC/SuspendEEStart_{OTHER}" target="hid_98"/>
+      <arc id="1625736664256" source="intplace_GC/SampledObjectAllocation_{System.SByte[]}" target="hid_109"/>
+      <arc id="1625736697024" source="intplace_Loader/ModuleLoad_{System.Runtime.InteropServices}" target="hid_121"/>
+      <arc id="1625735554240" source="hid_133" target="pre_GC/SuspendEEStart_{OTHER}"/>
+      <arc id="1625735570624" source="hid_136" target="pre_GC/SuspendEEStart_{OTHER}"/>
+      <arc id="1625735589952" source="intplace_GC/SampledObjectAllocation_{System.Object}" target="GC/SampledObjectAllocation_{System.Threading.Tasks.TaskFactory}"/>
+      <arc id="1625735591104" source="intplace_GC/SampledObjectAllocation_{System.String}" target="GC/SampledObjectAllocation_{System.Reflection.RuntimeAssembly}"/>
+      <arc id="1625722772688" source="pre_GC/SuspendEEStart_{OTHER}" target="GC/SuspendEEStart_{OTHER}"/>
+      <arc id="1625722813648" source="splace_in_GC/SuspendEEStart_{OTHER}_GC/SampledObjectAllocation_{System.Char[]}_8" target="hid_26"/>
+      <arc id="1625722449104" source="pre_AssemblyLoader/Stop_{System.Runtime.InteropServices}" target="AssemblyLoader/Stop_{System.Runtime.InteropServices}"/>
+      <arc id="1625736588496" source="pre_AssemblyLoader/ResolutionAttemptedFindInLoadContextAssemblyNotFound_{System.Text.Encoding.Extensions}" target="AssemblyLoader/ResolutionAttemptedFindInLoadContextAssemblyNotFound_{System.Text.Encoding.Extensions}"/>
+      <arc id="1625736699088" source="AssemblyLoader/Stop_{System.Threading}" target="intplace_AssemblyLoader/Stop_{System.Threading}"/>
+      <arc id="1625736748240" source="GC/SetGCHandle_{STRONG}" target="pre_Loader/AssemblyLoad_{System.Threading}"/>
+      <arc id="1625735591584" source="intplace_GC/SampledObjectAllocation_{System.String}" target="GC/SampledObjectAllocation_{ActivityInfo}"/>
+      <arc id="1625722836208" source="splace_in_GC/SuspendEEStart_{OTHER}_GC/SampledObjectAllocation_{System.String}_0" target="hid_31"/>
+      <arc id="1625735505136" source="GC/SampledObjectAllocation_{NullTextWriter}" target="intplace_GC/SampledObjectAllocation_{NullTextWriter}"/>
+      <arc id="1625722772736" source="hid_18" target="pre_GC/SuspendEEStart_{OTHER}"/>
+      <arc id="1625736723712" source="intplace_AssemblyLoader/Start_{System.Runtime.InteropServices}" target="hid_136"/>
+      <arc id="1625735554144" source="hid_89" target="pre_GC/SampledObjectAllocation_{OneElementAsyncLocalValueMap}"/>
+      <arc id="1625735556352" source="GC/SampledObjectAllocation_{ActivityInfo}" target="pre_GC/SampledObjectAllocation_{OneElementAsyncLocalValueMap}"/>
+      <arc id="1625736664352" source="hid_109" target="sink0"/>
+      <arc id="1625722340640" source="hid_75" target="pre_GC/SampledObjectAllocation_{System.Char[]}"/>
+      <arc id="1625735570432" source="AssemblyLoader/ResolutionAttemptedApplicationAssembliesSuccess_{System.Runtime.InteropServices}" target="splace_in_GC/SuspendEEStart_{OTHER}_AssemblyLoader/ResolutionAttemptedApplicationAssembliesSuccess_{System.Runtime.InteropServices}_0"/>
+      <arc id="1625736645936" source="GC/SampledObjectAllocation_{System.SByte[]}" target="intplace_GC/SampledObjectAllocation_{System.SByte[]}"/>
+      <arc id="1625736748336" source="GC/RestartEEStart" target="pre_GC/RestartEEStop"/>
+      <arc id="1625736789296" source="GC/SampledObjectAllocation_{System.Char[]}" target="intplace_GC/SampledObjectAllocation_{System.Char[]}"/>
+      <arc id="1625735591200" source="intplace_GC/SampledObjectAllocation_{System.Threading.ExecutionContext}" target="AssemblyLoader/Start_{System.Threading}"/>
+      <arc id="1625722410320" source="pre_GC/SampledObjectAllocation_{System.Object}" target="GC/SampledObjectAllocation_{System.Object}"/>
+      <arc id="1625736615248" source="pre_AssemblyLoader/ResolutionAttemptedApplicationAssembliesSuccess_{System.Runtime.InteropServices}" target="AssemblyLoader/ResolutionAttemptedApplicationAssembliesSuccess_{System.Runtime.InteropServices}"/>
+      <arc id="1625736721744" source="AssemblyLoader/Start_{System.Text.Encoding.Extensions}" target="intplace_AssemblyLoader/Start_{System.Text.Encoding.Extensions}"/>
+      <arc id="1625722813792" source="hid_27" target="pre_GC/SuspendEEStart_{OTHER}"/>
+      <arc id="1625736699232" source="intplace_AssemblyLoader/Stop_{System.Threading}" target="hid_126"/>
+      <arc id="1625735553760" source="hid_138" target="pre_Loader/AssemblyLoad_{System.Runtime.InteropServices}"/>
+      <arc id="1625736746368" source="intplace_GC/SampledObjectAllocation_{System.Object}" target="hid_141"/>
+      <arc id="1625736787328" source="intplace_GC/RestartEEStop" target="hid_162"/>
+      <arc id="1625735505280" source="intplace_GC/SampledObjectAllocation_{NullTextWriter}" target="hid_173"/>
+      <arc id="1625735570816" source="hid_91" target="pre_GC/SampledObjectAllocation_{System.SByte[]}"/>
+      <arc id="1625735557024" source="hid_149" target="pre_AssemblyLoader/Stop_{System.Runtime.InteropServices}"/>
+      <arc id="1625735571680" source="hid_146" target="pre_GC/SampledObjectAllocation_{System.String}"/>
+      <arc id="1625735591344" source="splace_in_GC/SampledObjectAllocation_{System.Byte[]}_GC/RestartEEStop_0" target="GC/SampledObjectAllocation_{System.Byte[]}"/>
+      <arc id="1625736773056" source="intplace_GC/RestartEEStop" target="hid_156"/>
+      <arc id="1625735556544" source="hid_98" target="pre_Loader/ModuleLoad_{System.Runtime.InteropServices}"/>
+      <arc id="1625722340832" source="splace_in_GC/SampledObjectAllocation_{System.Char[]}_0" target="hid_75"/>
+      <arc id="1625736721888" source="intplace_AssemblyLoader/Start_{System.Text.Encoding.Extensions}" target="hid_131"/>
+      <arc id="1625735554528" source="hid_122" target="pre_GC/SampledObjectAllocation_{System.String}"/>
+      <arc id="1625735570912" source="hid_173" target="pre_GC/SampledObjectAllocation_{System.Char[]}"/>
+      <arc id="1625722772976" source="splace_in_GC/SuspendEEStart_{OTHER}_GC/SampledObjectAllocation_{System.String}_0" target="hid_18"/>
+      <arc id="1625722838512" source="splace_in_GC/SampledObjectAllocation_{System.Text.DecoderReplacementFallback}_GC/RestartEEStop_0" target="hid_35"/>
+      <arc id="1625736723952" source="AssemblyLoader/KnownPathProbed_{C:\Program Files\dotnet\shared\Microsoft.NETCore.App\6.0.15\System.Threading.dll}" target="pre_AssemblyLoader/ResolutionAttemptedFindInLoadContextAssemblyNotFound_{System.Threading}"/>
+      <arc id="1625736748528" source="Loader/DomainModuleLoad_{C:\Program Files\dotnet\shared\Microsoft.NETCore.App\6.0.15\System.Runtime.InteropServices.dll}" target="intplace_Loader/DomainModuleLoad_{C:\Program Files\dotnet\shared\Microsoft.NETCore.App\6.0.15\System.Runtime.InteropServices.dll}"/>
+      <arc id="1625736789488" source="hid_168" target="splace_in_GC/SuspendEEStart_{OTHER}_GC/SampledObjectAllocation_{System.Char[]}_8"/>
+      <arc id="1625722385936" source="pre_Loader/AssemblyLoad_{System.Runtime.InteropServices}" target="Loader/AssemblyLoad_{System.Runtime.InteropServices}"/>
+      <arc id="1625736615440" source="GC/SampledObjectAllocation_{System.String}" target="intplace_GC/SampledObjectAllocation_{System.String}"/>
+      <arc id="1625736664592" source="GC/SampledObjectAllocation_{System.Threading.ExecutionContext}" target="intplace_GC/SampledObjectAllocation_{System.Threading.ExecutionContext}"/>
+      <arc id="1625736697360" source="GC/SampledObjectAllocation_{System.Text.EncoderReplacementFallback}" target="intplace_GC/SampledObjectAllocation_{System.Text.EncoderReplacementFallback}"/>
+      <arc id="1625736746512" source="hid_141" target="splace_in_GC/SuspendEEStart_{OTHER}_13"/>
+      <arc id="1625735556640" source="hid_158" target="pre_GC/SampledObjectAllocation_{System.String}"/>
+      <arc id="1625735573024" source="intplace_GC/SampledObjectAllocation_{&lt;&gt;c}" target="hid_25"/>
+      <arc id="1625735590432" source="intplace_GC/RestartEEStop" target="GC/SampledObjectAllocation_{NullStream}"/>
+      <arc id="1625722836544" source="hid_32" target="pre_GC/SuspendEEStart_{OTHER}"/>
+      <arc id="1625735554624" source="hid_115" target="pre_AssemblyLoader/Stop_{System.Runtime.InteropServices}"/>
+      <arc id="1625735571008" source="hid_105" target="pre_GC/SampledObjectAllocation_{System.String}"/>
+      <arc id="1625735591488" source="intplace_GC/SampledObjectAllocation_{System.SByte[]}" target="GC/SampledObjectAllocation_{System.Byte[]}"/>
+      <arc id="1625722814032" source="splace_in_GC/SuspendEEStart_{OTHER}_GC/SampledObjectAllocation_{SyncTextWriter}_9" target="hid_27"/>
+      <arc id="1625722412624" source="pre_Loader/AssemblyLoad_{System.Text.Encoding.Extensions}" target="Loader/AssemblyLoad_{System.Text.Encoding.Extensions}"/>
+      <arc id="1625722342992" source="pre_GC/SampledObjectAllocation_{System.Text.OSEncoder}" target="GC/SampledObjectAllocation_{System.Text.OSEncoder}"/>
+      <arc id="1625736724048" source="AssemblyLoader/Stop_{System.Runtime.InteropServices}" target="intplace_AssemblyLoader/Stop_{System.Runtime.InteropServices}"/>
+      <arc id="1625736773344" source="intplace_GC/RestartEEStop" target="hid_157"/>
+      <arc id="1625722472048" source="pre_GC/SampledObjectAllocation_{System.Threading.ExecutionContext}" target="GC/SampledObjectAllocation_{System.Threading.ExecutionContext}"/>
+      <arc id="1625736644208" source="GC/SampledObjectAllocation_{NullStream}" target="pre_GC/SampledObjectAllocation_{System.IO.StreamWriter}"/>
+      <arc id="1625736746608" source="hid_141" target="splace_in_GC/SuspendEEStop_GC/SampledObjectAllocation_{System.Object}_0"/>
+      <arc id="1625735534192" source="Loader/AssemblyLoad_{System.Threading}" target="pre_Loader/ModuleLoad_{System.Threading}"/>
+      <arc id="1625736699520" source="intplace_AssemblyLoader/Stop_{System.Threading}" target="hid_127"/>
+      <arc id="1625736748672" source="intplace_Loader/DomainModuleLoad_{C:\Program Files\dotnet\shared\Microsoft.NETCore.App\6.0.15\System.Runtime.InteropServices.dll}" target="hid_145"/>
+      <arc id="1625735536256" source="hid_99" target="pre_GC/SampledObjectAllocation_{System.String}"/>
+      <arc id="1625735556736" source="hid_92" target="pre_GC/SampledObjectAllocation_{System.String}"/>
+      <arc id="1625735573120" source="intplace_AssemblyLoader/Stop_{System.Runtime.InteropServices}" target="hid_22"/>
+      <arc id="1625723037344" source="hid_5" target="pre_GC/SampledObjectAllocation_{System.String}"/>
+      <arc id="1625722771104" source="source0" target="hid_15"/>
+      <arc id="1625736697504" source="intplace_GC/SampledObjectAllocation_{System.Text.EncoderReplacementFallback}" target="hid_122"/>
+      <arc id="1625736771232" source="intplace_GC/RestartEEStop" target="hid_151"/>
+      <arc id="1625735590048" source="intplace_Loader/AssemblyLoad_{System.Runtime.InteropServices}" target="hid_22"/>
+      <arc id="1625722773168" source="splace_in_GC/SuspendEEStart_{OTHER}_AssemblyLoader/ResolutionAttemptedApplicationAssembliesSuccess_{System.Runtime.InteropServices}_0" target="hid_18"/>
+      <arc id="1625722474160" source="pre_Loader/ModuleLoad_{System.Runtime.InteropServices}" target="Loader/ModuleLoad_{System.Runtime.InteropServices}"/>
+      <arc id="1625735591680" source="intplace_GC/SampledObjectAllocation_{System.Threading.ExecutionContext}" target="AssemblyLoader/Start_{System.Private.CoreLib}"/>
+      <arc id="1625722836688" source="splace_in_GC/SuspendEEStart_{OTHER}_GC/SampledObjectAllocation_{System.String}_0" target="hid_32"/>
+      <arc id="1625722447568" source="pre_GC/SampledObjectAllocation_{System.IO.StreamWriter}" target="GC/SampledObjectAllocation_{System.IO.StreamWriter}"/>
+      <arc id="1625735534288" source="Loader/ModuleLoad_{System.Threading}" target="pre_Loader/DomainModuleLoad_{C:\Program Files\dotnet\shared\Microsoft.NETCore.App\6.0.15\System.Threading.dll}"/>
+      <arc id="1625736646368" source="intplace_GC/SampledObjectAllocation_{System.SByte[]}" target="hid_104"/>
+      <arc id="1625735555872" source="Loader/DomainModuleLoad_{C:\Program Files\dotnet\shared\Microsoft.NETCore.App\6.0.15\System.Threading.dll}" target="pre_GC/SampledObjectAllocation_{System.String}"/>
+      <arc id="1625722771200" source="hid_15" target="pre_GC/SampledObjectAllocation_{System.String}"/>
+      <arc id="1625736722176" source="intplace_AssemblyLoader/Start_{System.Text.Encoding.Extensions}" target="hid_132"/>
+      <arc id="1625735505664" source="hid_174" target="splace_in_GC/SuspendEEStart_{OTHER}_GC/SampledObjectAllocation_{NullTextWriter}_7"/>
+      <arc id="1625735554816" source="hid_134" target="pre_Loader/AssemblyLoad_{System.Text.Encoding.Extensions}"/>
+      <arc id="1625735570528" source="AssemblyLoader/ResolutionAttemptedApplicationAssembliesSuccess_{System.Runtime.InteropServices}" target="pre_GC/SampledObjectAllocation_{System.String}"/>
+      <arc id="1625722814224" source="splace_in_GC/SuspendEEStart_{OTHER}_GC/SampledObjectAllocation_{System.SByte[]}_9" target="hid_27"/>
+      <arc id="1625736589072" source="pre_AssemblyLoader/ResolutionAttemptedFindInLoadContextAssemblyNotFound_{System.Runtime.InteropServices}" target="AssemblyLoader/ResolutionAttemptedFindInLoadContextAssemblyNotFound_{System.Runtime.InteropServices}"/>
+      <arc id="1625722836784" source="splace_in_GC/SuspendEEStart_{OTHER}_GC/SampledObjectAllocation_{System.SByte[]}_9" target="hid_32"/>
+      <arc id="1625722472240" source="pre_GC/SuspendEEStop" target="GC/SuspendEEStop"/>
+      <arc id="1625736644400" source="GC/SampledObjectAllocation_{System.Reflection.RuntimeAssembly}" target="intplace_GC/SampledObjectAllocation_{System.Reflection.RuntimeAssembly}"/>
+      <arc id="1625735536448" source="hid_177" target="pre_GC/SampledObjectAllocation_{System.Threading.ContextCallback}"/>
+      <arc id="1625735556928" source="hid_144" target="pre_Loader/ModuleLoad_{System.Runtime.InteropServices}"/>
+      <arc id="1625735573312" source="intplace_GC/SampledObjectAllocation_{System.Threading.ExecutionContext}" target="AssemblyLoader/Stop_{System.Private.CoreLib}"/>
+      <arc id="1625735536352" source="hid_147" target="pre_AssemblyLoader/KnownPathProbed_{C:\Program Files\dotnet\shared\Microsoft.NETCore.App\6.0.15\System.Runtime.InteropServices.dll}"/>
+      <arc id="1625735554912" source="hid_135" target="pre_AssemblyLoader/KnownPathProbed_{C:\Program Files\dotnet\shared\Microsoft.NETCore.App\6.0.15\System.Runtime.InteropServices.dll}"/>
+      <arc id="1625735571296" source="GC/SampledObjectAllocation_{System.Byte[]}" target="pre_GC/SampledObjectAllocation_{System.Object}"/>
+      <arc id="1625736699760" source="AssemblyLoader/Stop_{System.Private.CoreLib}" target="intplace_AssemblyLoader/Stop_{System.Private.CoreLib}"/>
+      <arc id="1625736773488" source="hid_157" target="splace_in_GC/SampledObjectAllocation_{System.SByte[]}_1"/>
+      <arc id="1625735507824" source="GC/SampledObjectAllocation_{System.Threading.Tasks.TaskFactory}" target="intplace_GC/SampledObjectAllocation_{System.Threading.Tasks.TaskFactory}"/>
+      <arc id="1625735570144" source="hid_106" target="pre_GC/SampledObjectAllocation_{System.Text.EncoderReplacementFallback}"/>
+      <arc id="1625735571776" source="GC/SampledObjectAllocation_{System.Byte[]}" target="pre_GC/SuspendEEStart_{OTHER}"/>
+      <arc id="1625723037584" source="splace_in_GC/SampledObjectAllocation_{System.String}_GC/SampledObjectAllocation_{System.Object}_4" target="hid_5"/>
+      <arc id="1625736771472" source="hid_151" target="splace_in_GC/SampledObjectAllocation_{System.Char[]}_0"/>
+      <arc id="1625735573408" source="intplace_GC/SampledObjectAllocation_{System.Reflection.RuntimeAssembly}" target="hid_31"/>
+      <arc id="1625736748960" source="intplace_Loader/DomainModuleLoad_{C:\Program Files\dotnet\shared\Microsoft.NETCore.App\6.0.15\System.Runtime.InteropServices.dll}" target="hid_146"/>
+      <arc id="1625735590912" source="intplace_GC/SampledObjectAllocation_{System.Threading.ExecutionContext}" target="AssemblyLoader/Start_{System.Runtime.InteropServices}"/>
+      <arc id="1625722836928" source="hid_33" target="pre_GC/SuspendEEStart_{OTHER}"/>
+      <arc id="1625736644544" source="intplace_GC/SampledObjectAllocation_{System.Reflection.RuntimeAssembly}" target="hid_99"/>
+      <arc id="1625736697792" source="intplace_GC/SampledObjectAllocation_{System.Text.EncoderReplacementFallback}" target="hid_123"/>
+      <arc id="1625735555008" source="hid_154" target="pre_GC/SampledObjectAllocation_{System.Text.OSEncoder}"/>
+      <arc id="1625735571392" source="hid_104" target="pre_GC/SampledObjectAllocation_{System.SByte[]}"/>
+      <arc id="1625736556496" source="pre_GC/SampledObjectAllocation_{System.String}" target="GC/SampledObjectAllocation_{System.String}"/>
+      <arc id="1625722388432" source="pre_Loader/DomainModuleLoad_{C:\Program Files\dotnet\shared\Microsoft.NETCore.App\6.0.15\System.Runtime.InteropServices.dll}" target="Loader/DomainModuleLoad_{C:\Program Files\dotnet\shared\Microsoft.NETCore.App\6.0.15\System.Runtime.InteropServices.dll}"/>
+      <arc id="1625736589264" source="pre_GC/SampledObjectAllocation_{&lt;&gt;c}" target="GC/SampledObjectAllocation_{&lt;&gt;c}"/>
+      <arc id="1625736667088" source="GC/SuspendEEStop" target="intplace_GC/SuspendEEStop"/>
+      <arc id="1625736773584" source="hid_157" target="splace_in_GC/SampledObjectAllocation_{System.Text.DecoderReplacementFallback}_GC/RestartEEStop_0"/>
+      <arc id="1625735569760" source="GC/SampledObjectAllocation_{SyncTextWriter}" target="splace_in_GC/SuspendEEStart_{OTHER}_GC/SampledObjectAllocation_{SyncTextWriter}_9"/>
+      <arc id="1625722509296" source="pre_GC/SampledObjectAllocation_{System.SByte[]}" target="GC/SampledObjectAllocation_{System.SByte[]}"/>
+      <arc id="1625722472432" source="hid_48" target="pre_GC/SuspendEEStop"/>
+      <arc id="1625736746992" source="AssemblyLoader/ResolutionAttemptedFindInLoadContextAssemblyNotFound_{System.Threading}" target="pre_AssemblyLoader/ResolutionAttemptedApplicationAssembliesSuccess_{System.Threading}"/>
+      <arc id="1625735505904" source="GC/SampledObjectAllocation_{System.Threading.ContextCallback}" target="pre_GC/SampledObjectAllocation_{&lt;&gt;c}"/>
+    </page>
+  </net>
+</pnml>

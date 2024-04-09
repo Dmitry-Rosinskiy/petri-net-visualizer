@@ -1,0 +1,83 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<pnml>
+  <net id="" type="http://www.pnml.org/version-2009/grammar/pnmlcoremodel">
+    <name>
+      <text></text>
+    </name>
+    <page id="n0">
+      <place id="sink0">
+        <name>
+          <text>sink0</text>
+        </name>
+      </place>
+      <place id="pre_GC/SampledObjectAllocation_{System.Byte[]}">
+        <name>
+          <text>pre_GC/SampledObjectAllocation_{System.Byte[]}</text>
+        </name>
+      </place>
+      <place id="source0">
+        <name>
+          <text>source0</text>
+        </name>
+        <initialMarking>
+          <text>1</text>
+        </initialMarking>
+      </place>
+      <place id="pre_GC/SampledObjectAllocation_{System.Byte[][]}">
+        <name>
+          <text>pre_GC/SampledObjectAllocation_{System.Byte[][]}</text>
+        </name>
+      </place>
+      <place id="intplace_GC/SampledObjectAllocation_{System.Byte[]}">
+        <name>
+          <text>intplace_GC/SampledObjectAllocation_{System.Byte[]}</text>
+        </name>
+      </place>
+      <transition id="GC/SampledObjectAllocation_{System.Byte[][]}">
+        <name>
+          <text>GC/SampledObjectAllocation_{System.Byte[][]}</text>
+        </name>
+      </transition>
+      <transition id="GC/SampledObjectAllocation_{System.Byte[]}">
+        <name>
+          <text>GC/SampledObjectAllocation_{System.Byte[]}</text>
+        </name>
+      </transition>
+      <transition id="hid_5">
+        <name>
+          <text>hid_5</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="3186d0c1-02e1-45de-9c37-d5ef129a3dea"/>
+      </transition>
+      <transition id="GC/SampledObjectAllocation_{System.Collections.Generic.List`1[System.Byte[]]}">
+        <name>
+          <text>GC/SampledObjectAllocation_{System.Collections.Generic.List`1[System.Byte[]]}</text>
+        </name>
+      </transition>
+      <transition id="hid_6">
+        <name>
+          <text>hid_6</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="7a8da9f1-1808-4875-86d7-8d59c7e2ae7c"/>
+      </transition>
+      <transition id="hid_7">
+        <name>
+          <text>hid_7</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="82433e18-578b-4fbb-a0b4-fa287f974705"/>
+      </transition>
+      <arc id="1625723171840" source="hid_5" target="pre_GC/SampledObjectAllocation_{System.Byte[][]}"/>
+      <arc id="1625723219728" source="source0" target="GC/SampledObjectAllocation_{System.Collections.Generic.List`1[System.Byte[]]}"/>
+      <arc id="1625723173136" source="hid_7" target="sink0"/>
+      <arc id="1625723218336" source="pre_GC/SampledObjectAllocation_{System.Byte[]}" target="GC/SampledObjectAllocation_{System.Byte[]}"/>
+      <arc id="1625735504032" source="intplace_GC/SampledObjectAllocation_{System.Byte[]}" target="hid_5"/>
+      <arc id="1625723172512" source="hid_6" target="pre_GC/SampledObjectAllocation_{System.Byte[]}"/>
+      <arc id="1625735504944" source="GC/SampledObjectAllocation_{System.Byte[]}" target="intplace_GC/SampledObjectAllocation_{System.Byte[]}"/>
+      <arc id="1625723172416" source="GC/SampledObjectAllocation_{System.Collections.Generic.List`1[System.Byte[]]}" target="pre_GC/SampledObjectAllocation_{System.Byte[][]}"/>
+      <arc id="1625723219536" source="pre_GC/SampledObjectAllocation_{System.Byte[][]}" target="GC/SampledObjectAllocation_{System.Byte[][]}"/>
+      <arc id="1625723172320" source="GC/SampledObjectAllocation_{System.Byte[][]}" target="pre_GC/SampledObjectAllocation_{System.Byte[]}"/>
+      <arc id="1625723174768" source="intplace_GC/SampledObjectAllocation_{System.Byte[]}" target="hid_6"/>
+      <arc id="1625723173232" source="intplace_GC/SampledObjectAllocation_{System.Byte[]}" target="hid_7"/>
+    </page>
+  </net>
+</pnml>
