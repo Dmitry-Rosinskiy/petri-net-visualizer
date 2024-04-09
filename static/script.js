@@ -11,16 +11,14 @@ const clickRadius = 50;
 
 // Добавление события нажатия по изображению
 const addClickEventToImage = (data) => {
-    console.log(data);
     const elemImage = document.getElementById("visualization");
     // Если текущая страница не визуализация, событие не создаётся
     if (elemImage === null) {
         return;
     }
-    console.log(data);
 
     elemImage.addEventListener("click", (event) => {
-        onImageClick(event, data);
+        // onImageClick(event, data);
     })
 }
 
@@ -38,7 +36,6 @@ const onImageClick = (event, data) => {
                 }
             }
         }
-        console.log("x =", event.offsetX, ", y =", event.offsetY);
     }
 }
 

@@ -21,15 +21,16 @@ subprocesses_session_tag = "subprocesses"
 # Тег информации об основном (иерархическом) процессе в сессии
 process_data_session_tag = "process-data"
 
+
 # Корневая страница (перенаправляет на страницу загрузки файлов)
 @app.route("/")
 def home():
     return redirect("/upload")
 
+
 # Страница загрузки файлов
 @app.route("/upload", methods=["GET", "POST"])
 def upload():
-
     # Если метод запроса - POST (отправка формы)
     if request.method == "POST":
 
@@ -59,14 +60,15 @@ def upload():
             # Показать страницу загрузки файлов
             return render_template("upload.html")
 
-
         process_file.save(upload_file_dir + process_file.filename)
         # Данные об основном (иерархическом)  процессе (название переходов и их координаты на изображении)
         process_data = dict()
         # Если нельзя получить изображение основного (иерархического) процесса (формат файла неверный)
-        if not save_image(upload_file_dir + process_file.filename, remove_extension(process_file.filename), image_dir, process_data):
+        if not save_image(upload_file_dir + process_file.filename, remove_extension(process_file.filename), image_dir,
+                          process_data):
             # Создание сообщения пользователю
-            flash(f"Файл с основным процессом ({process_file.filename}) имеет неверный формат. Попробуйте снова.", category="error")
+            flash(f"Файл с основным процессом ({process_file.filename}) имеет неверный формат. Попробуйте снова.",
+                  category="error")
             # Неудачная загрузка
             success_upload = False
 
@@ -75,7 +77,8 @@ def upload():
         for subprocess_file in subprocess_files:
             subprocess_file.save(upload_file_dir + subprocess_file.filename)
             # Если нельзя получить изображение подпроцесса (формат файла неверный)
-            if not save_image(upload_file_dir +  subprocess_file.filename, remove_extension(subprocess_file.filename), image_dir, {}):
+            if not save_image(upload_file_dir + subprocess_file.filename, remove_extension(subprocess_file.filename),
+                              image_dir, {}):
                 incorrect_files.append(subprocess_file.filename)
                 # Неудачная загрузка
                 success_upload = False
@@ -86,7 +89,8 @@ def upload():
         if not success_upload:
             if len(incorrect_files) > 0:
                 # Создание сообщения пользователю
-                flash(f"Файл с подпроцессом ({', '.join(incorrect_files)}) имеет неверный формат. Попробуйте снова.", category="error")
+                flash(f"Файл с подпроцессом ({', '.join(incorrect_files)}) имеет неверный формат. Попробуйте снова.",
+                      category="error")
                 for incorrect_file in incorrect_files:
                     # Удаление некорректного файла подпроцесса
                     remove_file(upload_file_dir + incorrect_file)
@@ -121,7 +125,6 @@ def upload():
 # Страница визуализации
 @app.route("/view", methods=["GET", "POST"])
 def view():
-
     # Если метод запроса - GET (переход на страницу)
     if request.method == "GET":
         # Если файлы процессов были ранее загружены
@@ -162,6 +165,7 @@ def view():
         # Перенаправить на страницу загрузки файлов
         return redirect("/upload")
 
+
 # Страница скачивания архива
 @app.route("/download")
 def download():
@@ -184,5 +188,5 @@ def download():
 
 # Запуск приложения
 if __name__ == "__main__":
-    #app.run(host="0.0.0.0", port=5000)
-    app.run()
+    # app.run(host="0.0.0.0", port=5000)
+    app.run(host="0.0.0.0")
